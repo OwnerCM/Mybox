@@ -446,34 +446,16 @@ def merge_configs(configs: list, merge_settings: dict, global_config: dict, sour
 
 def add_update_info(merged: dict, parsed_configs: list) -> dict:
     """
-    从各源中提取更新日期，取最新的作为合并后的更新标记
+    使用合并成功后的当天日期作为更新标记
     格式：更新日期:YYYYMMDD
-    如果所有源都没有日期标记，使用当天日期
     """
-    # 从所有源的 sites 中提取日期
-    dates = []
-    date_pattern = re.compile(r'20\d{6}')
-
-    for config in parsed_configs:
-        for site in config.get("sites", []):
-            name = site.get("name", "")
-            if "更新" in name or "日期" in name:
-                match = date_pattern.search(name)
-                if match:
-                    dates.append(match.group())
-
-    # 取最新日期
-    if dates:
-        latest_date = max(dates)
-    else:
-        # 所有源都没有日期标记，使用当天北京时间
-        beijing_tz = timezone(timedelta(hours=8))
-        latest_date = datetime.now(beijing_tz).strftime("%Y%m%d")
+    beijing_tz = timezone(timedelta(hours=8))
+    today = datetime.now(beijing_tz).strftime("%Y%m%d")
 
     # 在 sites 开头插入更新日期
     update_site = {
         "key": "_update_info",
-        "name": "更新日期:{}".format(latest_date),
+        "name": "更新日期:{}".format(today),
         "type": 3,
         "api": "csp_Config",
         "searchable": 0,
@@ -483,7 +465,7 @@ def add_update_info(merged: dict, parsed_configs: list) -> dict:
     if "sites" in merged:
         merged["sites"].insert(0, update_site)
 
-    logger.info(f"  更新日期: {latest_date}")
+    logger.info(f"  更新日期: {today}")
     return merged
 
 

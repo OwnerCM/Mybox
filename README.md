@@ -5,7 +5,7 @@
 ## 订阅地址
 
 ```
-https://raw.githubusercontent.com/你的用户名/mybox/main/output/tvbox.json
+https://raw.githubusercontent.com/你的用户名/mybox/main/tvbox.json
 ```
 
 ## 更新频率
@@ -18,8 +18,7 @@ https://raw.githubusercontent.com/你的用户名/mybox/main/output/tvbox.json
 ├── config.json          # 源配置（含注释说明）
 ├── merge.py             # 合并脚本
 ├── requirements.txt     # Python 依赖
-├── output/
-│   └── tvbox.json       # 合并输出（自动生成）
+├── tvbox.json           # 合并输出（自动生成）
 └── .github/workflows/
     └── update.yml       # 定时任务
 ```
