@@ -69,40 +69,39 @@ class Spider(BaseSpider):
         }
 
         try:
-            # 获取频道首页数据（包含分类和推荐）
-            channel_data = self._get('/channel/home?platform=mobile&size=20')
-            if channel_data and isinstance(channel_data, dict):
-                # 分类：用 sections 里的 l3 分类（有实际内容的）
-                sections = channel_data.get('sections', [])
-                if isinstance(sections, list):
-                    for sec in sections:
-                        l3_id = sec.get('l3Id')
-                        name = sec.get('name', '')
-                        if l3_id and name:
-                            result["class"].append({
-                                "type_id": f"l3_{l3_id}",
-                                "type_name": name,
-                            })
+            # 获取分类
+            genres_data = self._get('/genres')
+            if genres_data and isinstance(genres_data, list):
+                for g in genres_data:
+                    gid = str(g.get('id', ''))
+                    if not gid:
+                        continue
+                    result["class"].append({
+                        "type_id": gid,
+                        "type_name": g.get('name', ''),
+                    })
 
-                # 首页推荐：把各个板块的内容合并
-                for sec in sections:
-                    dramas = sec.get('dramas', [])
-                    if isinstance(dramas, list):
-                        for item in dramas:
-                            result["list"].append(self._parse_vod(item))
+            # 获取首页推荐
+            home_data = self._get('/home')
+            if home_data and isinstance(home_data, dict):
+                # guess 猜你喜欢
+                guess_list = home_data.get('guess', [])
+                if isinstance(guess_list, list):
+                    for item in guess_list:
+                        result["list"].append(self._parse_vod(item))
 
-                # 如果 sections 里没有数据，用 guess/feature
+                # feature 精选
+                feature_list = home_data.get('feature', [])
+                if isinstance(feature_list, list):
+                    for item in feature_list:
+                        result["list"].append(self._parse_vod(item))
+
+                # 如果列表为空，用首页第一页数据
                 if not result["list"]:
-                    home_data = self._get('/home')
-                    if home_data and isinstance(home_data, dict):
-                        guess_list = home_data.get('guess', [])
-                        if isinstance(guess_list, list):
-                            for item in guess_list:
-                                result["list"].append(self._parse_vod(item))
-                        feature_list = home_data.get('feature', [])
-                        if isinstance(feature_list, list):
-                            for item in feature_list:
-                                result["list"].append(self._parse_vod(item))
+                    dramas_data = self._get('/dramas?page=1&size=20')
+                    if dramas_data and isinstance(dramas_data, dict):
+                        for item in dramas_data.get('list', []):
+                            result["list"].append(self._parse_vod(item))
 
         except Exception as e:
             print(e)
@@ -122,9 +121,8 @@ class Spider(BaseSpider):
         }
 
         try:
-            # 分类ID格式: l3_{id}
-            l3_id = tid.replace('l3_', '')
-            data = self._get(f'/dramas?platform=mobile&l3Id={l3_id}&sort=最新&page={pg}&size=20')
+            # 分类ID是genre id
+            data = self._get(f'/dramas?genreId={tid}&page={pg}&size=20')
             if data and isinstance(data, dict):
                 lst = data.get('list', [])
                 total = data.get('total', 0)
