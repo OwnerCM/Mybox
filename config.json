@@ -1,0 +1,59 @@
+{
+  "_说明": "接口聚合配置文件",
+
+  "sources": [
+    {
+      "_说明": "嗷呜源，图片隐写+Base64格式（WEBP图片尾部追加Base64编码的JSON）",
+      "name": "嗷呜",
+      "url": "http://www.xn--nsr30bl8nb2kyt7a8vs.top/tv",
+      "encrypted": false,
+      "format": "image_base64"
+    },
+    {
+      "_说明": "潇洒源，AES-CBC加密格式（$# + key + #$ + 密文hex + iv）",
+      "name": "潇洒",
+      "url": "https://9877.kstore.space/ONE/one.json",
+      "encrypted": true
+    },
+    {
+      "_说明": "王二小放牛娃，明文JSON，需要okhttp UA",
+      "name": "王二小放牛娃",
+      "url": "http://new.xn--4kq62z5rby2qupq9ub.top",
+      "encrypted": false
+    }
+  ],
+
+  "output": "output/tvbox.json",
+
+  "request": {
+    "_说明": "请求参数：timeout秒数、UA标识、失败重试次数",
+    "timeout": 15,
+    "user_agent": "okhttp/4.12.0",
+    "retries": 2
+  },
+
+  "merge": {
+    "_说明": "合并策略：按key精确去重，保留首次出现的",
+    "deduplicate_sites": true,
+    "deduplicate_by": "key",
+    "keep_first": true
+  },
+
+  "filter": {
+    "_说明": "站点名包含以下关键词的会被过滤掉",
+    "exclude_keywords": ["教育", "课堂", "体育", "戏曲", "听书", "相声", "小品", "我的", "更新日期", "儿歌", "跳舞"]
+  },
+
+  "dedup_aliases": {
+    "_说明": "同义词归类：core_name不同但实质相同的站点归为一组，跨源只保留第一个",
+    "豆瓣": ["豆瓣推荐", "豆瓣首页"],
+    "本地": ["本地播放", "本地视频"],
+    "虎牙": ["虎牙Live", "虎牙直播"],
+    "轮回": ["轮回DJ", "轮回舞曲"]
+  },
+
+  "dedup_prefer_source": {
+    "_说明": "优先源规则：core_name包含key时，优先保留指定源的版本而非第一个源",
+    "观影": "王二小放牛娃"
+  }
+}
