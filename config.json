@@ -20,6 +20,13 @@
       "name": "王二小放牛娃",
       "url": "http://new.xn--4kq62z5rby2qupq9ub.top",
       "encrypted": false
+    },
+    {
+      "_说明": "本地自定义接口（Python爬虫等），直接追加不参与跨源去重",
+      "name": "自定义",
+      "url": "file://api.json",
+      "encrypted": false,
+      "skip_dedup": true
     }
   ],
 

@@ -84,7 +84,22 @@ def decrypt_tvbox(content: str) -> str:
 
 
 def download_source(url: str, config: dict, fmt: str = "json"):
-    """下载单个接口源，支持重试"""
+    """下载单个接口源，支持重试。支持 file:// 协议读取本地文件"""
+    # 本地文件
+    if url.startswith("file://"):
+        local_path = ROOT_DIR / url[7:]
+        try:
+            if fmt == "image_base64":
+                with open(local_path, "rb") as f:
+                    return f.read()
+            else:
+                with open(local_path, "r", encoding="utf-8") as f:
+                    return f.read()
+        except FileNotFoundError:
+            logger.error(f"  本地文件不存在: {local_path}")
+            return None
+
+    # 远程下载
     req_config = config.get("request", {})
     timeout = req_config.get("timeout", 15)
     user_agent = req_config.get("user_agent", "okhttp/4.12.0")
@@ -270,6 +285,8 @@ def merge_configs(configs: list, merge_settings: dict, global_config: dict, sour
             for site in sites:
                 site["_source_idx"] = idx
                 site["_source_name"] = source_name
+                if config.get("_skip_dedup"):
+                    site["_skip_dedup"] = True
             merged["sites"].extend(sites)
 
         # 其他列表字段：追加
@@ -334,6 +351,11 @@ def merge_configs(configs: list, merge_settings: dict, global_config: dict, sour
                 fuzzy_deduped.append(site)
                 continue
 
+            # 跳过去重：标记了 skip_dedup 的源直接追加
+            if site.get("_skip_dedup"):
+                fuzzy_deduped.append(site)
+                continue
+
             # 只对有效核心名称进行模糊匹配（至少2个字符）
             if core and len(core) >= 2:
                 dedup_key = alias_map.get(core, core)
@@ -369,6 +391,7 @@ def merge_configs(configs: list, merge_settings: dict, global_config: dict, sour
         for site in fuzzy_deduped:
             site.pop("_source_idx", None)
             site.pop("_source_name", None)
+            site.pop("_skip_dedup", None)
 
         merged["sites"] = fuzzy_deduped
         logger.info(f"  sites 去重: {original_sites} -> {after_key_dedup}(key) -> {len(merged['sites'])}(跨源模糊), 跨源模糊去重移除 {fuzzy_removed} 个")
@@ -492,6 +515,7 @@ def main():
         url = source["url"]
         encrypted = source.get("encrypted", False)
         fmt = source.get("format", "json")
+        skip_dedup = source.get("skip_dedup", False)
 
         logger.info(f"[{i}/{len(sources)}] 正在处理: {name}")
         logger.info(f"  URL: {url}")
@@ -515,6 +539,8 @@ def main():
 
         parsed_configs.append(parsed)
         source_names_list.append(name)
+        # 标记是否跳过去重
+        parsed["_skip_dedup"] = skip_dedup
         success_count += 1
 
     if not parsed_configs:

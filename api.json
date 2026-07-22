@@ -1,0 +1,16 @@
+{
+  "_说明": "自定义接口：存放不在远程源中的本地站点（如 Python 爬虫），合并时直接追加不去重",
+  "sites": [
+    {
+      "key": "py_黄豆",
+      "name": "🎬黄豆｜短剧",
+      "type": 3,
+      "api": "./py/黄豆短剧.py",
+      "searchable": 1,
+      "changeable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "playerType": 2
+    }
+  ]
+}

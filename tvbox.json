@@ -2286,6 +2286,17 @@
       "searchable": 1,
       "changeable": 0,
       "jar": "https://nos.netease.com/ysf/ac24b58a0c5197905c56226420b91969.jar;md5;d5012ea0a1b7d48cc2990156ba05ba5d"
+    },
+    {
+      "key": "py_黄豆",
+      "name": "🎬黄豆｜短剧",
+      "type": 3,
+      "api": "./py/黄豆短剧.py",
+      "searchable": 1,
+      "changeable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "playerType": 2
     }
   ],
   "lives": [
