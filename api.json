@@ -1,6 +1,39 @@
 {
-  "_说明": "自定义接口：存放不在远程源中的本地站点（如 Python 爬虫），合并时直接追加不去重",
+  "_说明": "自定义接口：存放不在远程源中的本地站点，合并时直接追加不去重",
   "sites": [
+    {
+      "key": "cj_moduapi",
+      "name": "🎯魔都｜采集",
+      "type": 1,
+      "api": "https://caiji.moduapi.cc/api.php/provide/vod/",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "playerType": 2,
+      "categories": ["国产动漫", "日韩动漫", "欧美动漫", "动漫电影", "电影", "连续剧", "综艺", "短剧"]
+    },
+    {
+      "key": "cj_lziapi",
+      "name": "🎯量子｜采集",
+      "type": 1,
+      "api": "https://cj.lziapi.com/api.php/provide/vod/",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "playerType": 2,
+      "categories": ["国产动漫", "日韩动漫", "欧美动漫", "动漫电影", "电影", "连续剧", "综艺", "短剧"]
+    },
+    {
+      "key": "cj_ffzyapi",
+      "name": "🎯非凡｜采集",
+      "type": 1,
+      "api": "https://cj.ffzyapi.com/api.php/provide/vod/",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "playerType": 2,
+      "categories": ["国产动漫", "日韩动漫", "欧美动漫", "动漫电影", "电影", "连续剧", "综艺", "短剧"]
+    },
     {
       "key": "py_黄豆",
       "name": "🎬黄豆｜短剧",

@@ -300,6 +300,49 @@ def merge_configs(configs: list, merge_settings: dict, global_config: dict, sour
         if isinstance(flags, list):
             merged["flags"].extend(flags)
 
+    # === 先过滤再去重 ===
+    filter_settings = global_config.get("filter", {})
+    exclude_keywords = filter_settings.get("exclude_keywords", [])
+    source_exclude = filter_settings.get("source_exclude", {})
+    source_exclude_except = filter_settings.get("source_exclude_except", {})
+    # 移除 _说明 字段
+    source_exclude = {k: v for k, v in source_exclude.items() if not k.startswith("_")}
+    source_exclude_except = {k: v for k, v in source_exclude_except.items() if not k.startswith("_")}
+
+    if exclude_keywords or source_exclude:
+        before_filter = len(merged["sites"])
+        filtered_sites = []
+        for site in merged["sites"]:
+            name = site.get("name", "")
+            src_name = site.get("_source_name", "")
+
+            # 全局关键词过滤
+            if any(kw in name for kw in exclude_keywords):
+                continue
+
+            # 按源过滤（带例外）
+            if src_name in source_exclude:
+                src_keywords = source_exclude[src_name]
+                except_keywords = source_exclude_except.get(src_name, [])
+                # 如果命中了按源过滤关键词，但同时命中了例外关键词，则保留
+                if any(kw in name for kw in src_keywords):
+                    if not any(ek in name for ek in except_keywords):
+                        continue
+
+            filtered_sites.append(site)
+
+        merged["sites"] = filtered_sites
+        filtered_count = before_filter - len(merged["sites"])
+        if filtered_count > 0:
+            logger.info(f"  过滤: 移除 {filtered_count} 个站点")
+            if exclude_keywords:
+                logger.info(f"    全局关键词: {exclude_keywords}")
+            if source_exclude:
+                for sn, kws in source_exclude.items():
+                    excepts = source_exclude_except.get(sn, [])
+                    exc_str = f" (例外: {excepts})" if excepts else ""
+                    logger.info(f"    [{sn}] 专属过滤: {kws}{exc_str}")
+
     # 去重
     if deduplicate:
         original_sites = len(merged["sites"])
@@ -467,6 +510,35 @@ def merge_configs(configs: list, merge_settings: dict, global_config: dict, sour
     return merged
 
 
+def sort_sites_by_category(sites: list, categories: list) -> list:
+    """
+    按分类规则对站点排序
+    每个分类定义了匹配关键词，按分类顺序排列，未匹配的放在最后
+    分类内部保持原始顺序
+    """
+    # 将站点按分类归组
+    groups = [[] for _ in range(len(categories) + 1)]  # 最后一组是未分类
+
+    for site in sites:
+        name = site.get("name", "")
+        key = site.get("key", "")
+        matched = False
+        for i, cat in enumerate(categories):
+            keywords = cat.get("keywords", [])
+            if any(kw in name or kw in key for kw in keywords):
+                groups[i].append(site)
+                matched = True
+                break
+        if not matched:
+            groups[-1].append(site)
+
+    # 按顺序拼接
+    result = []
+    for group in groups:
+        result.extend(group)
+    return result
+
+
 def add_update_info(merged: dict, parsed_configs: list) -> dict:
     """
     使用合并成功后的当天日期作为更新标记
@@ -553,18 +625,13 @@ def main():
     logger.info("\n开始合并...")
     merged = merge_configs(parsed_configs, merge_settings, config, source_names_list)
 
-    # 过滤不需要的站点
-    filter_settings = config.get("filter", {})
-    exclude_keywords = filter_settings.get("exclude_keywords", [])
-    if exclude_keywords and "sites" in merged:
-        before_filter = len(merged["sites"])
-        merged["sites"] = [
-            site for site in merged["sites"]
-            if not any(kw in site.get("name", "") for kw in exclude_keywords)
-        ]
-        filtered_count = before_filter - len(merged["sites"])
-        if filtered_count > 0:
-            logger.info(f"  关键词过滤: 移除 {filtered_count} 个站点 (规则: {exclude_keywords})")
+    # 按分类排序
+    sort_config = config.get("sort_order", {})
+    sort_categories = sort_config.get("categories", [])
+    if sort_categories and "sites" in merged:
+        sorted_sites = sort_sites_by_category(merged["sites"], sort_categories)
+        merged["sites"] = sorted_sites
+        logger.info(f"  站点已按分类排序")
 
     # 添加更新时间
     merged = add_update_info(merged, parsed_configs)
