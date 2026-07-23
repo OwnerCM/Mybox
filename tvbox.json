@@ -43,15 +43,6 @@
       "changeable": 0
     },
     {
-      "name": "🧩爱看|采集",
-      "key": "AiBot",
-      "type": 3,
-      "api": "csp_AiBotAmns",
-      "searchable": 1,
-      "quickSearch": 1,
-      "changeable": 0
-    },
-    {
       "key": "cj_moduapi",
       "name": "🎯魔都｜采集",
       "type": 1,
@@ -62,8 +53,6 @@
       "playerType": 2,
       "categories": [
         "国产动漫",
-        "日韩动漫",
-        "欧美动漫",
         "动漫电影",
         "电影",
         "连续剧",
@@ -82,8 +71,6 @@
       "playerType": 2,
       "categories": [
         "国产动漫",
-        "日韩动漫",
-        "欧美动漫",
         "动漫电影",
         "电影",
         "连续剧",
@@ -102,8 +89,6 @@
       "playerType": 2,
       "categories": [
         "国产动漫",
-        "日韩动漫",
-        "欧美动漫",
         "动漫电影",
         "电影",
         "连续剧",
@@ -223,6 +208,16 @@
       }
     },
     {
+      "name": "☁️观影|4K",
+      "key": "Gying",
+      "type": 3,
+      "api": "csp_GyingAmns",
+      "searchable": 1,
+      "quickSearch": 1,
+      "changeable": 0,
+      "ext": "https://nos.netease.com/youdata-netease/public-utilUpload-fVP3F3EpDeP3hiqPYunAJ.gz"
+    },
+    {
       "name": "☁️盘链|4K",
       "key": "Panl",
       "type": 3,
@@ -287,17 +282,6 @@
       "searchable": 1,
       "quickSearch": 1,
       "changeable": 0
-    },
-    {
-      "key": "NewGuanYing",
-      "name": "💓观影┃4K💓",
-      "type": 3,
-      "api": "csp_NewGuanYingGuard",
-      "searchable": 1,
-      "quickSearch": 1,
-      "changeable": 0,
-      "timeout": 120,
-      "jar": "https://zl.wpscdn.cn/2026/07/23/space_img/f45313da-d63b-4484-8aa9-4a641929455b.png;md5;d2cea066e80053264949b0eec3c8719d"
     },
     {
       "name": "⭐夏天|秒播",
@@ -1000,16 +984,6 @@
       "jar": "https://img.51shazhu.com/autoupload/gE6Y0Af2tjXBCNig6CtNDI12_FRYNb81z6UPhMWD8iI/20260722/VlYw/0X0/0000.png;md5;ad09eaea3d09acc403385b8eea97cb10"
     },
     {
-      "key": "爱看机器人",
-      "name": "爱看 • 影视",
-      "type": 3,
-      "api": "csp_Ikanbot",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "jar": "https://img.51shazhu.com/autoupload/gE6Y0Af2tjXBCNig6CtNDI12_FRYNb81z6UPhMWD8iI/20260722/VlYw/0X0/0000.png;md5;ad09eaea3d09acc403385b8eea97cb10"
-    },
-    {
       "key": "枫叶影视",
       "name": "枫叶 • 影视",
       "type": 3,
@@ -1087,18 +1061,6 @@
       "jar": "https://img.51shazhu.com/autoupload/gE6Y0Af2tjXBCNig6CtNDI12_FRYNb81z6UPhMWD8iI/20260722/VlYw/0X0/0000.png;md5;ad09eaea3d09acc403385b8eea97cb10"
     },
     {
-      "key": "bilibiliys",
-      "name": " 🅱‍哔哩┃影视🅱‍",
-      "type": 3,
-      "api": "csp_NewBiLiYSGuard",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "changeable": 0,
-      "ext": "https://support-chat.rongcloud.cn/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBYkU9IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--3083f43a14e6b59f4bfe248478a3a8765b34bfdd/bilisong.txt",
-      "jar": "https://zl.wpscdn.cn/2026/07/23/space_img/f45313da-d63b-4484-8aa9-4a641929455b.png;md5;d2cea066e80053264949b0eec3c8719d"
-    },
-    {
       "name": "🐱番薯|动漫",
       "key": "FanShu",
       "type": 3,
@@ -1125,109 +1087,6 @@
       "searchable": 1,
       "quickSearch": 1,
       "changeable": 0
-    },
-    {
-      "key": "Anime1",
-      "name": "A1 • 动漫",
-      "type": 3,
-      "api": "https://pan.vma.cc/pan/down.php/ec67b9045d393737f073d2c9365533f0.js",
-      "ext": "https://wget.la/https://raw.githubusercontent.com/PizazzGY/NewTVBox/main/anime/js/Anime1.js",
-      "jar": "https://img.51shazhu.com/autoupload/gE6Y0Af2tjXBCNig6CtNDI12_FRYNb81z6UPhMWD8iI/20260722/VlYw/0X0/0000.png;md5;ad09eaea3d09acc403385b8eea97cb10"
-    },
-    {
-      "key": "漫国动漫",
-      "name": "漫国 • 动漫",
-      "type": 3,
-      "searchable": 1,
-      "api": "csp_AppSy",
-      "ext": {
-        "url": "http://114.66.27.208:806",
-        "siteKey": "rectangleadsadxa",
-        "listKey": "aassddwwxxllsx1x",
-        "parsesKey": "aassddwwxxllsx1x"
-      },
-      "jar": "https://img.51shazhu.com/autoupload/gE6Y0Af2tjXBCNig6CtNDI12_FRYNb81z6UPhMWD8iI/20260722/VlYw/0X0/0000.png;md5;ad09eaea3d09acc403385b8eea97cb10"
-    },
-    {
-      "key": "方舟动漫",
-      "name": "方舟 • 动漫",
-      "type": 3,
-      "searchable": 1,
-      "api": "csp_AppGet",
-      "ext": {
-        "url": "https://www.cyfz.top",
-        "dataKey": "e72cdfd629e8895d",
-        "dataIv": "e72cdfd629e8895d"
-      },
-      "jar": "https://img.51shazhu.com/autoupload/gE6Y0Af2tjXBCNig6CtNDI12_FRYNb81z6UPhMWD8iI/20260722/VlYw/0X0/0000.png;md5;ad09eaea3d09acc403385b8eea97cb10"
-    },
-    {
-      "key": "曼波动漫",
-      "name": "曼波 • 动漫",
-      "type": 3,
-      "searchable": 1,
-      "api": "csp_AppGet",
-      "ext": {
-        "url": "https://app.omofun1.top",
-        "dataKey": "66dc309cbeeca454",
-        "dataIv": "66dc309cbeeca454"
-      },
-      "jar": "https://img.51shazhu.com/autoupload/gE6Y0Af2tjXBCNig6CtNDI12_FRYNb81z6UPhMWD8iI/20260722/VlYw/0X0/0000.png;md5;ad09eaea3d09acc403385b8eea97cb10"
-    },
-    {
-      "key": "咕咕动漫",
-      "name": "咕咕 • 动漫",
-      "type": 3,
-      "searchable": 1,
-      "api": "csp_AppGet",
-      "ext": {
-        "url": "https://www.gugu3.com",
-        "dataKey": "nKfZ8KX6JTNWRzTD",
-        "dataIv": "nKfZ8KX6JTNWRzTD"
-      },
-      "jar": "https://img.51shazhu.com/autoupload/gE6Y0Af2tjXBCNig6CtNDI12_FRYNb81z6UPhMWD8iI/20260722/VlYw/0X0/0000.png;md5;ad09eaea3d09acc403385b8eea97cb10"
-    },
-    {
-      "key": "巴士动漫",
-      "name": "巴士 • 动漫",
-      "type": 3,
-      "api": "csp_XYQHiker",
-      "ext": "https://wget.la/https://raw.githubusercontent.com/PizazzGY/NewTVBox/main/anime/json/BSDM.json",
-      "jar": "https://img.51shazhu.com/autoupload/gE6Y0Af2tjXBCNig6CtNDI12_FRYNb81z6UPhMWD8iI/20260722/VlYw/0X0/0000.png;md5;ad09eaea3d09acc403385b8eea97cb10"
-    },
-    {
-      "key": "路漫漫",
-      "name": "路漫漫 • 动漫",
-      "type": 3,
-      "api": "https://pan.vma.cc/pan/down.php/ec67b9045d393737f073d2c9365533f0.js",
-      "ext": "https://wget.la/https://raw.githubusercontent.com/PizazzGY/NewTVBox/main/anime/js/LMM.js",
-      "jar": "https://img.51shazhu.com/autoupload/gE6Y0Af2tjXBCNig6CtNDI12_FRYNb81z6UPhMWD8iI/20260722/VlYw/0X0/0000.png;md5;ad09eaea3d09acc403385b8eea97cb10"
-    },
-    {
-      "key": "去看吧",
-      "name": "去看吧 • 动漫",
-      "type": 3,
-      "api": "https://pan.vma.cc/pan/down.php/ec67b9045d393737f073d2c9365533f0.js",
-      "ext": "https://wget.la/https://raw.githubusercontent.com/PizazzGY/NewTVBox/main/anime/js/QKB.js",
-      "jar": "https://img.51shazhu.com/autoupload/gE6Y0Af2tjXBCNig6CtNDI12_FRYNb81z6UPhMWD8iI/20260722/VlYw/0X0/0000.png;md5;ad09eaea3d09acc403385b8eea97cb10"
-    },
-    {
-      "key": "AnimeMiaoWuGuard",
-      "name": "🤡喵呜┃动漫🤡",
-      "type": 3,
-      "api": "csp_AnimeMiaoWuGuard",
-      "searchable": 1,
-      "changeable": 0,
-      "jar": "https://zl.wpscdn.cn/2026/07/23/space_img/f45313da-d63b-4484-8aa9-4a641929455b.png;md5;d2cea066e80053264949b0eec3c8719d"
-    },
-    {
-      "key": "AnimeMoDu",
-      "name": "🤡魔都┃动漫🤡",
-      "type": 3,
-      "api": "csp_AnimeMoDuGuard",
-      "searchable": 1,
-      "changeable": 0,
-      "jar": "https://zl.wpscdn.cn/2026/07/23/space_img/f45313da-d63b-4484-8aa9-4a641929455b.png;md5;d2cea066e80053264949b0eec3c8719d"
     },
     {
       "name": "🎬嗷嗚|漫剧",
@@ -1460,170 +1319,6 @@
       "playerType": 2
     },
     {
-      "name": "🌍爱瓜|墙外",
-      "key": "AiGua",
-      "type": 3,
-      "api": "csp_AiGuaAmns",
-      "searchable": 1,
-      "quickSearch": 1,
-      "changeable": 0
-    },
-    {
-      "name": "🌍U视|墙外",
-      "key": "Ysp",
-      "type": 3,
-      "api": "csp_YspAmns",
-      "searchable": 1,
-      "quickSearch": 1,
-      "changeable": 0
-    },
-    {
-      "name": "🌍欧乐|墙外",
-      "key": "Olyy",
-      "type": 3,
-      "api": "csp_OlyyAmns",
-      "searchable": 1,
-      "quickSearch": 1,
-      "changeable": 0
-    },
-    {
-      "name": "🌍壹帆|墙外",
-      "key": "Aiyf",
-      "type": 3,
-      "api": "csp_AiyfAmns",
-      "searchable": 1,
-      "quickSearch": 1,
-      "changeable": 0
-    },
-    {
-      "name": "📡Bili|Live",
-      "key": "Bilive",
-      "type": 3,
-      "api": "csp_BiliveAmns",
-      "searchable": 1,
-      "quickSearch": 1,
-      "changeable": 0,
-      "style": {
-        "type": "rect",
-        "ratio": 1.433
-      }
-    },
-    {
-      "name": "📡虎牙|Live",
-      "key": "HuyaLive",
-      "type": 3,
-      "api": "csp_HuyaLiveAmns",
-      "searchable": 1,
-      "quickSearch": 1,
-      "changeable": 0,
-      "style": {
-        "type": "rect",
-        "ratio": 1.433
-      }
-    },
-    {
-      "key": "网络直播",
-      "name": "网络 • 直播",
-      "type": 3,
-      "api": "https://wget.la/https://raw.githubusercontent.com/PizazzGY/NewTVBox/main/webcast/py/WLZB.py",
-      "jar": "https://img.51shazhu.com/autoupload/gE6Y0Af2tjXBCNig6CtNDI12_FRYNb81z6UPhMWD8iI/20260722/VlYw/0X0/0000.png;md5;ad09eaea3d09acc403385b8eea97cb10"
-    },
-    {
-      "key": "哔哩直播",
-      "name": "哔哩 • 直播",
-      "type": 3,
-      "api": "https://wget.la/https://raw.githubusercontent.com/PizazzGY/NewTVBox/main/webcast/py/BLZB.py",
-      "jar": "https://img.51shazhu.com/autoupload/gE6Y0Af2tjXBCNig6CtNDI12_FRYNb81z6UPhMWD8iI/20260722/VlYw/0X0/0000.png;md5;ad09eaea3d09acc403385b8eea97cb10"
-    },
-    {
-      "key": "LiveDouYu",
-      "name": "🐳斗鱼┃直播🐳",
-      "type": 3,
-      "api": "csp_LiveDouYuGuard",
-      "searchable": 1,
-      "changeable": 0,
-      "jar": "https://zl.wpscdn.cn/2026/07/23/space_img/f45313da-d63b-4484-8aa9-4a641929455b.png;md5;d2cea066e80053264949b0eec3c8719d"
-    },
-    {
-      "key": "LiveBiLi",
-      "name": "🅱️哔哩┃直播🅱️",
-      "type": 3,
-      "api": "csp_LiveBiLiGuard",
-      "searchable": 1,
-      "changeable": 0,
-      "jar": "https://zl.wpscdn.cn/2026/07/23/space_img/f45313da-d63b-4484-8aa9-4a641929455b.png;md5;d2cea066e80053264949b0eec3c8719d"
-    },
-    {
-      "name": "🎉Bili|合集",
-      "key": "BiliHeji",
-      "type": 3,
-      "api": "csp_BiliAmns",
-      "searchable": 1,
-      "quickSearch": 1,
-      "changeable": 0,
-      "ext": {
-        "home": "1",
-        "json": "https://file.icve.com.cn/file_doc/299/797/4AFC77E563EDEDB37F18BA6458610E16.aowu",
-        "cookie": ""
-      },
-      "style": {
-        "type": "rect",
-        "ratio": 1.433
-      }
-    },
-    {
-      "name": "🎉Bili|歌曲",
-      "key": "BiliGequ",
-      "type": 3,
-      "api": "csp_BiliAmns",
-      "searchable": 0,
-      "quickSearch": 0,
-      "changeable": 0,
-      "ext": {
-        "json": "https://cdn.waimaimingtang.com/file/images/bwc/20260527100843-9aefe070b5.aowu",
-        "cookie": ""
-      },
-      "style": {
-        "type": "rect",
-        "ratio": 1.433
-      }
-    },
-    {
-      "name": "🛴推送|播放",
-      "key": "push_agent",
-      "type": 3,
-      "api": "csp_PushAmns",
-      "searchable": 0,
-      "quickSearch": 0,
-      "changeable": 0
-    },
-    {
-      "key": "预告",
-      "name": "新片 • 预告",
-      "type": 3,
-      "api": "csp_YGP",
-      "searchable": 0,
-      "jar": "https://img.51shazhu.com/autoupload/gE6Y0Af2tjXBCNig6CtNDI12_FRYNb81z6UPhMWD8iI/20260722/VlYw/0X0/0000.png;md5;ad09eaea3d09acc403385b8eea97cb10"
-    },
-    {
-      "key": "哔哩视频",
-      "name": "哔哩 • 视频",
-      "type": 3,
-      "api": "csp_BiliYS",
-      "searchable": 1,
-      "quickSearch": 0,
-      "filterable": 0,
-      "changeable": 0,
-      "style": {
-        "type": "rect",
-        "ratio": 1.433
-      },
-      "ext": {
-        "cookie": "http://127.0.0.1:9978/file/TVBox/bili_cookie.txt"
-      },
-      "jar": "https://img.51shazhu.com/autoupload/gE6Y0Af2tjXBCNig6CtNDI12_FRYNb81z6UPhMWD8iI/20260722/VlYw/0X0/0000.png;md5;ad09eaea3d09acc403385b8eea97cb10"
-    },
-    {
       "key": "三六零",
       "name": "三六零 • 视频",
       "type": 3,
@@ -1640,91 +1335,6 @@
       },
       "ext": "https://wget.la/https://raw.githubusercontent.com/PizazzGY/NewTVBox/main/anime/json/DLXFS.json",
       "jar": "https://img.51shazhu.com/autoupload/gE6Y0Af2tjXBCNig6CtNDI12_FRYNb81z6UPhMWD8iI/20260722/VlYw/0X0/0000.png;md5;ad09eaea3d09acc403385b8eea97cb10"
-    },
-    {
-      "key": "哔哩合集",
-      "name": "哔哩 • 合集",
-      "type": 3,
-      "api": "csp_Bili",
-      "searchable": 1,
-      "quickSearch": 0,
-      "filterable": 0,
-      "changeable": 0,
-      "style": {
-        "type": "rect",
-        "ratio": 1.433
-      },
-      "ext": {
-        "json": "https://wget.la/https://raw.githubusercontent.com/PizazzGY/NewTVBox/main/movie/json/BLHJ.json",
-        "cookie": "http://127.0.0.1:9978/file/TVBox/bili_cookie.txt"
-      },
-      "jar": "https://img.51shazhu.com/autoupload/gE6Y0Af2tjXBCNig6CtNDI12_FRYNb81z6UPhMWD8iI/20260722/VlYw/0X0/0000.png;md5;ad09eaea3d09acc403385b8eea97cb10"
-    },
-    {
-      "key": "NewDouBan",
-      "name": "🐮【王二小放牛娃】🐮",
-      "type": 3,
-      "api": "csp_NewDouBanGuard",
-      "indexs": 1,
-      "searchable": 0,
-      "quickSearch": 0,
-      "filterable": 0,
-      "ext": "https://cdn.waimaimingtang.com/file/images/bwc/20260414181247-ae51abfbfe.txt",
-      "jar": "https://zl.wpscdn.cn/2026/07/23/space_img/f45313da-d63b-4484-8aa9-4a641929455b.png;md5;d2cea066e80053264949b0eec3c8719d"
-    },
-    {
-      "key": "bilibili",
-      "name": " 🅱‍哔哩┃合集🅱‍",
-      "type": 3,
-      "api": "csp_BiliGuard",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "changeable": 0,
-      "style": {
-        "type": "rect",
-        "ratio": 1.433
-      },
-      "ext": {
-        "json": "https://support-chat.rongcloud.cn/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBYkE9IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--47a8ff0e68559a89a9a75b37d09a2b0854dc5a8a/bili001.txt"
-      },
-      "jar": "https://zl.wpscdn.cn/2026/07/23/space_img/f45313da-d63b-4484-8aa9-4a641929455b.png;md5;d2cea066e80053264949b0eec3c8719d"
-    },
-    {
-      "key": "biliych",
-      "name": " 🅱‍哔哩┃歌曲🅱‍",
-      "type": 3,
-      "api": "csp_BiliGuard",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "changeable": 0,
-      "style": {
-        "type": "rect",
-        "ratio": 1.433
-      },
-      "ext": {
-        "json": "https://support-chat.rongcloud.cn/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBYkU9IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--3083f43a14e6b59f4bfe248478a3a8765b34bfdd/bilisong.txt"
-      },
-      "jar": "https://zl.wpscdn.cn/2026/07/23/space_img/f45313da-d63b-4484-8aa9-4a641929455b.png;md5;d2cea066e80053264949b0eec3c8719d"
-    },
-    {
-      "key": "SoHaiYin",
-      "name": "🎠海音┃综合🎠",
-      "type": 3,
-      "api": "csp_SoHaiYinGuard",
-      "searchable": 1,
-      "changeable": 0,
-      "jar": "https://zl.wpscdn.cn/2026/07/23/space_img/f45313da-d63b-4484-8aa9-4a641929455b.png;md5;d2cea066e80053264949b0eec3c8719d"
-    },
-    {
-      "key": "So97So",
-      "name": "🎠九七┃综合🎠",
-      "type": 3,
-      "api": "csp_So97SoGuard",
-      "searchable": 1,
-      "changeable": 0,
-      "jar": "https://zl.wpscdn.cn/2026/07/23/space_img/f45313da-d63b-4484-8aa9-4a641929455b.png;md5;d2cea066e80053264949b0eec3c8719d"
     }
   ],
   "lives": [

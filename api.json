@@ -10,7 +10,7 @@
       "quickSearch": 1,
       "filterable": 1,
       "playerType": 2,
-      "categories": ["国产动漫", "日韩动漫", "欧美动漫", "动漫电影", "电影", "连续剧", "综艺", "短剧"]
+      "categories": ["国产动漫", "动漫电影", "电影", "连续剧", "综艺", "短剧"]
     },
     {
       "key": "cj_lziapi",
@@ -21,7 +21,7 @@
       "quickSearch": 1,
       "filterable": 1,
       "playerType": 2,
-      "categories": ["国产动漫", "日韩动漫", "欧美动漫", "动漫电影", "电影", "连续剧", "综艺", "短剧"]
+      "categories": ["国产动漫", "动漫电影", "电影", "连续剧", "综艺", "短剧"]
     },
     {
       "key": "cj_ffzyapi",
@@ -32,7 +32,7 @@
       "quickSearch": 1,
       "filterable": 1,
       "playerType": 2,
-      "categories": ["国产动漫", "日韩动漫", "欧美动漫", "动漫电影", "电影", "连续剧", "综艺", "短剧"]
+      "categories": ["国产动漫", "动漫电影", "电影", "连续剧", "综艺", "短剧"]
     },
     {
       "key": "py_黄豆",

@@ -304,10 +304,8 @@ def merge_configs(configs: list, merge_settings: dict, global_config: dict, sour
     filter_settings = global_config.get("filter", {})
     exclude_keywords = filter_settings.get("exclude_keywords", [])
     source_exclude = filter_settings.get("source_exclude", {})
-    source_exclude_except = filter_settings.get("source_exclude_except", {})
     # 移除 _说明 字段
     source_exclude = {k: v for k, v in source_exclude.items() if not k.startswith("_")}
-    source_exclude_except = {k: v for k, v in source_exclude_except.items() if not k.startswith("_")}
 
     if exclude_keywords or source_exclude:
         before_filter = len(merged["sites"])
@@ -320,14 +318,11 @@ def merge_configs(configs: list, merge_settings: dict, global_config: dict, sour
             if any(kw in name for kw in exclude_keywords):
                 continue
 
-            # 按源过滤（带例外）
+            # 按源过滤
             if src_name in source_exclude:
                 src_keywords = source_exclude[src_name]
-                except_keywords = source_exclude_except.get(src_name, [])
-                # 如果命中了按源过滤关键词，但同时命中了例外关键词，则保留
                 if any(kw in name for kw in src_keywords):
-                    if not any(ek in name for ek in except_keywords):
-                        continue
+                    continue
 
             filtered_sites.append(site)
 
@@ -339,9 +334,7 @@ def merge_configs(configs: list, merge_settings: dict, global_config: dict, sour
                 logger.info(f"    全局关键词: {exclude_keywords}")
             if source_exclude:
                 for sn, kws in source_exclude.items():
-                    excepts = source_exclude_except.get(sn, [])
-                    exc_str = f" (例外: {excepts})" if excepts else ""
-                    logger.info(f"    [{sn}] 专属过滤: {kws}{exc_str}")
+                    logger.info(f"    [{sn}] 专属过滤: {kws}")
 
     # 去重
     if deduplicate:
@@ -353,11 +346,9 @@ def merge_configs(configs: list, merge_settings: dict, global_config: dict, sour
         # 第二步：按 name 模糊匹配跨源去重
         # 策略：
         # - 同一个源内的同名站点保留（作者有意配置的多线路）
-        # - 跨源出现的同名站点只保留第一个源的（除非有优先源规则）
-        # - dedup_skip_keywords 中的关键词跳过去重（各源都保留）
-        # - dedup_prefer_source 指定某些站点优先使用哪个源
+        # - 跨源出现的同名站点只保留第一个源的
         fuzzy_deduped = []
-        seen_core = {}  # dedup_key -> (source_idx, list_index)
+        seen_core = {}  # dedup_key -> source_idx
         fuzzy_removed = 0
 
         # 加载同义词归类
@@ -370,29 +361,10 @@ def merge_configs(configs: list, merge_settings: dict, global_config: dict, sour
                 for alias in aliases:
                     alias_map[alias] = group_key
 
-        # 加载跳过去重的关键词
-        skip_keywords_conf = global_config.get("dedup_skip_keywords", {})
-        if isinstance(skip_keywords_conf, list):
-            skip_keywords = skip_keywords_conf
-        elif isinstance(skip_keywords_conf, dict):
-            skip_keywords = skip_keywords_conf.get("keywords", [])
-        else:
-            skip_keywords = []
-
-        # 加载优先源规则：core关键词 -> 源名称
-        prefer_source = global_config.get("dedup_prefer_source", {})
-        prefer_source = {k: v for k, v in prefer_source.items() if not k.startswith("_")}
-
         for site in merged["sites"]:
             name = site.get("name", "")
             core = extract_core_name(name)
             source_idx = site.get("_source_idx", 0)
-            source_name = site.get("_source_name", "")
-
-            # 跳过去重：包含特定关键词的站点各源都保留
-            if any(kw in name for kw in skip_keywords):
-                fuzzy_deduped.append(site)
-                continue
 
             # 跳过去重：标记了 skip_dedup 的源直接追加
             if site.get("_skip_dedup"):
@@ -404,33 +376,18 @@ def merge_configs(configs: list, merge_settings: dict, global_config: dict, sour
                 dedup_key = alias_map.get(core, core)
 
                 if dedup_key in seen_core:
-                    first_source_idx, first_list_idx = seen_core[dedup_key]
+                    first_source_idx = seen_core[dedup_key]
                     if first_source_idx != source_idx:
-                        # 跨源重复：检查是否有优先源规则
-                        preferred = None
-                        for pref_kw, pref_src in prefer_source.items():
-                            if pref_kw in core:
-                                preferred = pref_src
-                                break
-
-                        if preferred and preferred == source_name:
-                            # 当前站点来自优先源，替换掉之前保留的
-                            fuzzy_deduped[first_list_idx] = None  # 标记为替换
-                            seen_core[dedup_key] = (source_idx, len(fuzzy_deduped))
-                            fuzzy_deduped.append(site)
-                            fuzzy_removed += 1  # 仍然算去重了一个
-                        else:
-                            # 去掉当前的
-                            fuzzy_removed += 1
+                        # 跨源重复，去掉
+                        fuzzy_removed += 1
                         continue
                     # 同源内的同名保留
                 else:
-                    seen_core[dedup_key] = (source_idx, len(fuzzy_deduped))
+                    seen_core[dedup_key] = source_idx
 
             fuzzy_deduped.append(site)
 
-        # 清理 None 标记和临时字段
-        fuzzy_deduped = [s for s in fuzzy_deduped if s is not None]
+        # 清理临时字段
         for site in fuzzy_deduped:
             site.pop("_source_idx", None)
             site.pop("_source_name", None)
