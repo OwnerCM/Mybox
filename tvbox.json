@@ -1310,15 +1310,6 @@
       "genre": "shortdrama"
     },
     {
-      "name": "🔍短剧|盘搜",
-      "key": "PSdju",
-      "type": 3,
-      "api": "csp_PSdjuAmns",
-      "searchable": 1,
-      "quickSearch": 1,
-      "changeable": 0
-    },
-    {
       "key": "笒鬼短剧",
       "name": "笒鬼 • 短剧",
       "type": 3,
@@ -1598,15 +1589,6 @@
       }
     },
     {
-      "name": "🔍fish|盘搜",
-      "key": "PSfish",
-      "type": 3,
-      "api": "csp_PSfishAmns",
-      "searchable": 1,
-      "quickSearch": 1,
-      "changeable": 0
-    },
-    {
       "name": "🛴推送|播放",
       "key": "push_agent",
       "type": 3,
@@ -1660,155 +1642,6 @@
       "jar": "https://img.51shazhu.com/autoupload/gE6Y0Af2tjXBCNig6CtNDI12_FRYNb81z6UPhMWD8iI/20260722/VlYw/0X0/0000.png;md5;ad09eaea3d09acc403385b8eea97cb10"
     },
     {
-      "key": "阿里云盘",
-      "name": "阿里 • 云盘",
-      "type": 3,
-      "api": "csp_PanAli",
-      "searchable": 0,
-      "filterable": 0,
-      "changeable": 0,
-      "style": {
-        "type": "list",
-        "ratio": 1.433
-      },
-      "jar": "https://img.51shazhu.com/autoupload/gE6Y0Af2tjXBCNig6CtNDI12_FRYNb81z6UPhMWD8iI/20260722/VlYw/0X0/0000.png;md5;ad09eaea3d09acc403385b8eea97cb10"
-    },
-    {
-      "key": "聚合",
-      "name": "聚合• 搜索",
-      "type": 3,
-      "api": "csp_JuheSo",
-      "searchable": 1,
-      "quickSearch": 0,
-      "filterable": 0,
-      "timeout": 60,
-      "jar": "https://img.51shazhu.com/autoupload/gE6Y0Af2tjXBCNig6CtNDI12_FRYNb81z6UPhMWD8iI/20260722/VlYw/0X0/0000.png;md5;ad09eaea3d09acc403385b8eea97cb10"
-    },
-    {
-      "key": "盘搜",
-      "name": "盘搜 • 搜索",
-      "type": 3,
-      "api": "csp_PanSou",
-      "searchable": 1,
-      "quickSearch": 0,
-      "filterable": 0,
-      "timeout": 60,
-      "jar": "https://img.51shazhu.com/autoupload/gE6Y0Af2tjXBCNig6CtNDI12_FRYNb81z6UPhMWD8iI/20260722/VlYw/0X0/0000.png;md5;ad09eaea3d09acc403385b8eea97cb10"
-    },
-    {
-      "key": "百酷",
-      "name": "百酷 • 搜索",
-      "type": 3,
-      "api": "csp_Baiku",
-      "searchable": 1,
-      "quickSearch": 0,
-      "filterable": 0,
-      "timeout": 60,
-      "jar": "https://img.51shazhu.com/autoupload/gE6Y0Af2tjXBCNig6CtNDI12_FRYNb81z6UPhMWD8iI/20260722/VlYw/0X0/0000.png;md5;ad09eaea3d09acc403385b8eea97cb10"
-    },
-    {
-      "key": "酷乐",
-      "name": "酷乐 • 搜索",
-      "type": 3,
-      "api": "csp_KuLe",
-      "searchable": 1,
-      "quickSearch": 0,
-      "filterable": 0,
-      "timeout": 60,
-      "jar": "https://img.51shazhu.com/autoupload/gE6Y0Af2tjXBCNig6CtNDI12_FRYNb81z6UPhMWD8iI/20260722/VlYw/0X0/0000.png;md5;ad09eaea3d09acc403385b8eea97cb10"
-    },
-    {
-      "key": "米搜",
-      "name": "米搜 • 搜索",
-      "type": 3,
-      "api": "csp_MiSou",
-      "searchable": 1,
-      "quickSearch": 0,
-      "filterable": 0,
-      "ext": {
-        "site": [
-          "https://misoso.shop",
-          "http://www.misoso.shop"
-        ]
-      },
-      "timeout": 60,
-      "jar": "https://img.51shazhu.com/autoupload/gE6Y0Af2tjXBCNig6CtNDI12_FRYNb81z6UPhMWD8iI/20260722/VlYw/0X0/0000.png;md5;ad09eaea3d09acc403385b8eea97cb10"
-    },
-    {
-      "key": "鬼鬼",
-      "name": "鬼鬼 • 搜索",
-      "type": 3,
-      "api": "csp_GuiGui",
-      "searchable": 1,
-      "quickSearch": 0,
-      "filterable": 0,
-      "timeout": 60,
-      "jar": "https://img.51shazhu.com/autoupload/gE6Y0Af2tjXBCNig6CtNDI12_FRYNb81z6UPhMWD8iI/20260722/VlYw/0X0/0000.png;md5;ad09eaea3d09acc403385b8eea97cb10"
-    },
-    {
-      "key": "天翼",
-      "name": "天翼 • 搜索",
-      "type": 3,
-      "api": "csp_TianYiSo",
-      "searchable": 1,
-      "quickSearch": 0,
-      "filterable": 0,
-      "timeout": 60,
-      "jar": "https://img.51shazhu.com/autoupload/gE6Y0Af2tjXBCNig6CtNDI12_FRYNb81z6UPhMWD8iI/20260722/VlYw/0X0/0000.png;md5;ad09eaea3d09acc403385b8eea97cb10"
-    },
-    {
-      "key": "趣盘",
-      "name": "趣盘 • 搜索",
-      "type": 3,
-      "api": "csp_QuPanSo",
-      "searchable": 1,
-      "quickSearch": 0,
-      "filterable": 0,
-      "timeout": 60,
-      "jar": "https://img.51shazhu.com/autoupload/gE6Y0Af2tjXBCNig6CtNDI12_FRYNb81z6UPhMWD8iI/20260722/VlYw/0X0/0000.png;md5;ad09eaea3d09acc403385b8eea97cb10"
-    },
-    {
-      "key": "88看球",
-      "name": "88 • 看球",
-      "type": 3,
-      "api": "csp_Kanqiu",
-      "gridview": 3,
-      "style": {
-        "type": "list"
-      },
-      "jar": "https://img.51shazhu.com/autoupload/gE6Y0Af2tjXBCNig6CtNDI12_FRYNb81z6UPhMWD8iI/20260722/VlYw/0X0/0000.png;md5;ad09eaea3d09acc403385b8eea97cb10"
-    },
-    {
-      "key": "呦呦DJ",
-      "name": "呦呦 • DJ",
-      "type": 3,
-      "api": "csp_Djuu",
-      "style": {
-        "type": "list"
-      },
-      "jar": "https://img.51shazhu.com/autoupload/gE6Y0Af2tjXBCNig6CtNDI12_FRYNb81z6UPhMWD8iI/20260722/VlYw/0X0/0000.png;md5;ad09eaea3d09acc403385b8eea97cb10"
-    },
-    {
-      "key": "轮回DJ",
-      "name": "轮回 • DJ",
-      "type": 3,
-      "api": "csp_Djlh",
-      "style": {
-        "type": "list"
-      },
-      "jar": "https://img.51shazhu.com/autoupload/gE6Y0Af2tjXBCNig6CtNDI12_FRYNb81z6UPhMWD8iI/20260722/VlYw/0X0/0000.png;md5;ad09eaea3d09acc403385b8eea97cb10"
-    },
-    {
-      "key": "蜻蜓FM",
-      "name": "蜻蜓 • FM",
-      "type": 3,
-      "api": "csp_QingtingFM",
-      "style": {
-        "type": "list"
-      },
-      "jar": "https://img.51shazhu.com/autoupload/gE6Y0Af2tjXBCNig6CtNDI12_FRYNb81z6UPhMWD8iI/20260722/VlYw/0X0/0000.png;md5;ad09eaea3d09acc403385b8eea97cb10"
-    },
-    {
       "key": "哔哩合集",
       "name": "哔哩 • 合集",
       "type": 3,
@@ -1824,35 +1657,6 @@
       "ext": {
         "json": "https://wget.la/https://raw.githubusercontent.com/PizazzGY/NewTVBox/main/movie/json/BLHJ.json",
         "cookie": "http://127.0.0.1:9978/file/TVBox/bili_cookie.txt"
-      },
-      "jar": "https://img.51shazhu.com/autoupload/gE6Y0Af2tjXBCNig6CtNDI12_FRYNb81z6UPhMWD8iI/20260722/VlYw/0X0/0000.png;md5;ad09eaea3d09acc403385b8eea97cb10"
-    },
-    {
-      "key": "急救教学",
-      "name": "急救 • 教学",
-      "type": 3,
-      "api": "csp_FirstAid",
-      "searchable": 0,
-      "quickSearch": 0,
-      "changeable": 0,
-      "style": {
-        "type": "rect",
-        "ratio": 3.8
-      },
-      "gridview": "0-0-4.1",
-      "jar": "https://img.51shazhu.com/autoupload/gE6Y0Af2tjXBCNig6CtNDI12_FRYNb81z6UPhMWD8iI/20260722/VlYw/0X0/0000.png;md5;ad09eaea3d09acc403385b8eea97cb10"
-    },
-    {
-      "key": "养生堂",
-      "name": "养生 • 知识",
-      "type": 3,
-      "api": "csp_YST",
-      "searchable": 0,
-      "quickSearch": 0,
-      "changeable": 0,
-      "style": {
-        "type": "rect",
-        "ratio": 1.597
       },
       "jar": "https://img.51shazhu.com/autoupload/gE6Y0Af2tjXBCNig6CtNDI12_FRYNb81z6UPhMWD8iI/20260722/VlYw/0X0/0000.png;md5;ad09eaea3d09acc403385b8eea97cb10"
     },
