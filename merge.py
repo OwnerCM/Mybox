@@ -12,6 +12,9 @@ import time
 import base64
 import binascii
 import logging
+import zipfile
+import io
+import shutil
 from pathlib import Path
 from datetime import datetime, timezone, timedelta
 
@@ -89,7 +92,7 @@ def download_source(url: str, config: dict, fmt: str = "json"):
     if url.startswith("file://"):
         local_path = ROOT_DIR / url[7:]
         try:
-            if fmt == "image_base64":
+            if fmt in ("image_base64", "zip"):
                 with open(local_path, "rb") as f:
                     return f.read()
             else:
@@ -111,7 +114,7 @@ def download_source(url: str, config: dict, fmt: str = "json"):
         try:
             resp = requests.get(url, headers=headers, timeout=timeout, allow_redirects=True)
             resp.raise_for_status()
-            if fmt == "image_base64":
+            if fmt in ("image_base64", "zip"):
                 return resp.content  # 返回 bytes
             return resp.text
         except requests.RequestException as e:
@@ -123,16 +126,88 @@ def download_source(url: str, config: dict, fmt: str = "json"):
                 return None
 
 
-def parse_source(raw_content, encrypted: bool, source_name: str, fmt: str = "json"):
+def parse_source(raw_content, encrypted: bool, source_name: str, fmt: str = "json", source_config: dict = None):
     """
     解析接口源内容
     支持格式：
     - json: 明文 JSON
     - encrypted: AES 加密
     - image_base64: 图片隐写 + Base64（WEBP/PNG 图片后追加 Base64 数据）
+    - zip: ZIP 压缩包，解压后读取其中的 api.json
     """
     try:
-        if fmt == "image_base64":
+        if fmt == "zip":
+            # ZIP 格式：解压到指定目录，读取 api.json
+            logger.info(f"  正在解压 ZIP 包 [{source_name}]...")
+            if isinstance(raw_content, str):
+                raw_content = raw_content.encode("latin-1")
+
+            source_config = source_config or {}
+            zip_root = source_config.get("zip_root", "")  # ZIP 内的根目录前缀
+            extract_to = source_config.get("zip_extract_to", "")  # 解压到本地的目录名
+
+            # 解压到项目目录下
+            if extract_to:
+                extract_path = ROOT_DIR / extract_to
+            else:
+                extract_path = ROOT_DIR / "zip_temp"
+
+            # 清理旧文件
+            if extract_path.exists():
+                shutil.rmtree(extract_path)
+            extract_path.mkdir(parents=True, exist_ok=True)
+
+            # 解压
+            with zipfile.ZipFile(io.BytesIO(raw_content)) as zf:
+                for member in zf.namelist():
+                    # 跳过目录
+                    if member.endswith("/"):
+                        continue
+                    # 去掉 zip_root 前缀
+                    if zip_root and member.startswith(zip_root + "/"):
+                        relative = member[len(zip_root) + 1:]
+                    elif zip_root and member.startswith(zip_root):
+                        relative = member[len(zip_root):]
+                    else:
+                        relative = member
+
+                    if not relative:
+                        continue
+
+                    # 写入文件
+                    target = extract_path / relative
+                    target.parent.mkdir(parents=True, exist_ok=True)
+                    with zf.open(member) as src, open(target, "wb") as dst:
+                        dst.write(src.read())
+
+            # 读取解压后的 api.json
+            api_path = extract_path / "api.json"
+            if not api_path.exists():
+                raise ValueError(f"ZIP 包中未找到 api.json (解压目录: {extract_path})")
+
+            with open(api_path, "r", encoding="utf-8") as f:
+                data = json.load(f)
+
+            # 将 api.json 中的相对路径 ./xxx 转为相对于项目根目录的路径
+            # spider: "./spider.jar" -> "xiaosa/spider.jar"
+            spider = data.get("spider", "")
+            if spider.startswith("./"):
+                data["spider"] = f"{extract_to}/{spider[2:]}"
+
+            # sites 中的 api 和 ext 引用的本地文件也要转路径
+            for site in data.get("sites", []):
+                api = site.get("api", "")
+                if api.startswith("./"):
+                    site["api"] = f"{extract_to}/{api[2:]}"
+                ext = site.get("ext", "")
+                if isinstance(ext, str) and ext.startswith("./"):
+                    site["ext"] = f"{extract_to}/{ext[2:]}"
+
+            file_count = sum(1 for _ in extract_path.rglob("*") if _.is_file())
+            logger.info(f"  解压完成: {file_count} 个文件 -> {extract_path}/")
+            return data
+
+        elif fmt == "image_base64":
             # 图片隐写格式：RIFF(WEBP) 头 + 图片数据 + ** + Base64(JSON)
             logger.info(f"  正在解析图片隐写格式 [{source_name}]...")
             if isinstance(raw_content, str):
@@ -556,7 +631,7 @@ def main():
             continue
 
         # 解析
-        parsed = parse_source(raw_content, encrypted, name, fmt)
+        parsed = parse_source(raw_content, encrypted, name, fmt, source)
         if parsed is None:
             logger.warning(f"  跳过 [{name}]（解析失败）")
             continue

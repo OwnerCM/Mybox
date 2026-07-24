@@ -10,10 +10,13 @@
       "format": "image_base64"
     },
     {
-      "_说明": "潇洒源，AES-CBC加密格式（$# + key + #$ + 密文hex + iv）",
-      "name": "潇洒",
-      "url": "https://9877.kstore.space/ONE/one.json",
-      "encrypted": true
+      "_说明": "潇洒本地包，ZIP格式，自动下载解压，使用其中的api.json和配套文件",
+      "name": "潇洒本地",
+      "url": "https://oss-v1.wangmeipo.cn/236/单线路.zip",
+      "format": "zip",
+      "zip_root": "TVBoxOSC/tvbox",
+      "zip_extract_to": "xiaosa",
+      "encrypted": false
     },
     {
       "_说明": "王二小放牛娃，明文JSON，需要okhttp UA",
@@ -24,7 +27,7 @@
     {
       "_说明": "本地自定义接口（Python爬虫等），直接追加不参与跨源去重",
       "name": "自定义",
-      "url": "file://api.json",
+      "url": "file://other.json",
       "encrypted": false,
       "skip_dedup": true
     }
@@ -34,7 +37,7 @@
 
   "request": {
     "_说明": "请求参数：timeout秒数、UA标识、失败重试次数",
-    "timeout": 15,
+    "timeout": 30,
     "user_agent": "okhttp/4.12.0",
     "retries": 2
   },
@@ -51,7 +54,7 @@
     "exclude_keywords": ["观影", "爱看", "哔哩", "Bili", "直播", "Live", "推送", "教育", "课堂", "体育", "戏曲", "听书", "相声", "小品", "我的", "本地", "DIY", "更新日期", "儿歌", "跳舞", "磁力", "网盘", "给力", "分享", "音乐", "KTV", "电台", "舞曲", "搜索", "盘搜", "教学", "知识", "云盘", "看球", "DJ", "FM", "墙外", "王二小放牛娃", "综合", "新片"],
     "source_exclude": {
       "_说明": "按源名称单独过滤：该源中站点名包含指定关键词的会被移除",
-      "潇洒": ["4K", "动漫"],
+      "潇洒本地": ["4K", "动漫"],
       "王二小放牛娃": ["4K", "动漫"]
     }
   },
