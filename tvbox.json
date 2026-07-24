@@ -61,42 +61,6 @@
       ]
     },
     {
-      "key": "cj_lziapi",
-      "name": "🎯量子｜采集",
-      "type": 1,
-      "api": "https://cj.lziapi.com/api.php/provide/vod/",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "playerType": 2,
-      "categories": [
-        "国产动漫",
-        "动漫电影",
-        "电影",
-        "连续剧",
-        "综艺",
-        "短剧"
-      ]
-    },
-    {
-      "key": "cj_ffzyapi",
-      "name": "🎯非凡｜采集",
-      "type": 1,
-      "api": "https://cj.ffzyapi.com/api.php/provide/vod/",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "playerType": 2,
-      "categories": [
-        "国产动漫",
-        "动漫电影",
-        "电影",
-        "连续剧",
-        "综艺",
-        "短剧"
-      ]
-    },
-    {
       "name": "💥玩偶|4K",
       "key": "woWogg",
       "type": 3,
@@ -206,16 +170,6 @@
         ],
         "filters": "https://file.icve.com.cn/file_doc/96/840/182D20892E75022992BBFD3EEECA3195.aowu"
       }
-    },
-    {
-      "name": "☁️观影|4K",
-      "key": "Gying",
-      "type": 3,
-      "api": "csp_GyingAmns",
-      "searchable": 1,
-      "quickSearch": 1,
-      "changeable": 0,
-      "ext": "https://nos.netease.com/youdata-netease/public-utilUpload-fVP3F3EpDeP3hiqPYunAJ.gz"
     },
     {
       "name": "☁️盘链|4K",
@@ -1306,17 +1260,6 @@
       "searchable": 1,
       "changeable": 0,
       "jar": "https://zl.wpscdn.cn/2026/07/23/space_img/f45313da-d63b-4484-8aa9-4a641929455b.png;md5;d2cea066e80053264949b0eec3c8719d"
-    },
-    {
-      "key": "py_黄豆",
-      "name": "🎬黄豆｜短剧",
-      "type": 3,
-      "api": "./py/黄豆短剧.py",
-      "searchable": 1,
-      "changeable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "playerType": 2
     },
     {
       "key": "三六零",
