@@ -35,6 +35,8 @@
 
   "output": "tvbox.json",
 
+  "repo_base_url": "https://raw.githubusercontent.com/OwnerCM/Mybox/main",
+
   "request": {
     "_说明": "请求参数：timeout秒数、UA标识、失败重试次数",
     "timeout": 30,

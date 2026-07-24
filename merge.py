@@ -188,27 +188,36 @@ def parse_source(raw_content, encrypted: bool, source_name: str, fmt: str = "jso
             with open(api_path, "r", encoding="utf-8") as f:
                 data = json.load(f)
 
-            # 将 api.json 中的相对路径 ./xxx 转为相对于项目根目录的路径
-            # spider: "./spider.jar" -> "./xiaosa/spider.jar;md5;hash"
+            # 将 api.json 中的相对路径转为完整 URL
+            # spider: "./spider.jar" -> "https://raw.githubusercontent.com/.../xiaosa/spider.jar;md5;hash"
+            repo_base = source_config.get("repo_base_url", "")
             spider = data.get("spider", "")
             if spider.startswith("./"):
                 jar_relative = f"{extract_to}/{spider[2:]}"
                 jar_path = ROOT_DIR / jar_relative
-                if jar_path.exists():
+                if jar_path.exists() and repo_base:
                     import hashlib as _hashlib
                     jar_md5 = _hashlib.md5(jar_path.read_bytes()).hexdigest()
-                    data["spider"] = f"./{jar_relative};md5;{jar_md5}"
+                    data["spider"] = f"{repo_base}/{jar_relative};md5;{jar_md5}"
+                elif repo_base:
+                    data["spider"] = f"{repo_base}/{jar_relative}"
                 else:
                     data["spider"] = f"./{jar_relative}"
 
-            # sites 中的 api 和 ext 引用的本地文件也要转路径（保留 ./ 前缀）
+            # sites 中的 api 和 ext 引用的本地文件也转为完整 URL
             for site in data.get("sites", []):
                 api = site.get("api", "")
                 if api.startswith("./"):
-                    site["api"] = f"./{extract_to}/{api[2:]}"
+                    if repo_base:
+                        site["api"] = f"{repo_base}/{extract_to}/{api[2:]}"
+                    else:
+                        site["api"] = f"./{extract_to}/{api[2:]}"
                 ext = site.get("ext", "")
                 if isinstance(ext, str) and ext.startswith("./"):
-                    site["ext"] = f"./{extract_to}/{ext[2:]}"
+                    if repo_base:
+                        site["ext"] = f"{repo_base}/{extract_to}/{ext[2:]}"
+                    else:
+                        site["ext"] = f"./{extract_to}/{ext[2:]}"
 
             file_count = sum(1 for _ in extract_path.rglob("*") if _.is_file())
             logger.info(f"  解压完成: {file_count} 个文件 -> {extract_path}/")
@@ -637,8 +646,10 @@ def main():
             logger.warning(f"  跳过 [{name}]（下载失败）")
             continue
 
-        # 解析
-        parsed = parse_source(raw_content, encrypted, name, fmt, source)
+        # 解析（将 repo_base_url 传入 source 配置供路径转换使用）
+        source_with_base = dict(source)
+        source_with_base["repo_base_url"] = config.get("repo_base_url", "")
+        parsed = parse_source(raw_content, encrypted, name, fmt, source_with_base)
         if parsed is None:
             logger.warning(f"  跳过 [{name}]（解析失败）")
             continue
