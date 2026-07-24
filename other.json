@@ -6,8 +6,9 @@
       "name": "🎯魔都｜采集",
       "type": 1,
       "api": "https://caiji.moduapi.cc/api.php/provide/vod/",
-      "searchable": 1,
-      "quickSearch": 1,
+      "indexs": 1,
+      "searchable": 0,
+      "quickSearch": 0,
       "filterable": 1,
       "playerType": 2,
       "categories": ["国产动漫", "动漫电影", "电影", "连续剧", "综艺", "短剧"]
