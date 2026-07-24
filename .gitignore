@@ -17,7 +17,3 @@ Thumbs.db
 # 临时文件
 *.tmp
 *.log
-tvbox.json
-
-# 潇洒本地包解压目录（每次自动下载解压）
-xiaosa/
