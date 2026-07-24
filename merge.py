@@ -189,10 +189,17 @@ def parse_source(raw_content, encrypted: bool, source_name: str, fmt: str = "jso
                 data = json.load(f)
 
             # 将 api.json 中的相对路径 ./xxx 转为相对于项目根目录的路径
-            # spider: "./spider.jar" -> "xiaosa/spider.jar"
+            # spider: "./spider.jar" -> "xiaosa/spider.jar;md5;hash"
             spider = data.get("spider", "")
             if spider.startswith("./"):
-                data["spider"] = f"{extract_to}/{spider[2:]}"
+                jar_relative = f"{extract_to}/{spider[2:]}"
+                jar_path = ROOT_DIR / jar_relative
+                if jar_path.exists():
+                    import hashlib as _hashlib
+                    jar_md5 = _hashlib.md5(jar_path.read_bytes()).hexdigest()
+                    data["spider"] = f"{jar_relative};md5;{jar_md5}"
+                else:
+                    data["spider"] = jar_relative
 
             # sites 中的 api 和 ext 引用的本地文件也要转路径
             for site in data.get("sites", []):
