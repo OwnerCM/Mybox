@@ -189,7 +189,7 @@ def parse_source(raw_content, encrypted: bool, source_name: str, fmt: str = "jso
                 data = json.load(f)
 
             # 将 api.json 中的相对路径 ./xxx 转为相对于项目根目录的路径
-            # spider: "./spider.jar" -> "xiaosa/spider.jar;md5;hash"
+            # spider: "./spider.jar" -> "./xiaosa/spider.jar;md5;hash"
             spider = data.get("spider", "")
             if spider.startswith("./"):
                 jar_relative = f"{extract_to}/{spider[2:]}"
@@ -197,18 +197,18 @@ def parse_source(raw_content, encrypted: bool, source_name: str, fmt: str = "jso
                 if jar_path.exists():
                     import hashlib as _hashlib
                     jar_md5 = _hashlib.md5(jar_path.read_bytes()).hexdigest()
-                    data["spider"] = f"{jar_relative};md5;{jar_md5}"
+                    data["spider"] = f"./{jar_relative};md5;{jar_md5}"
                 else:
-                    data["spider"] = jar_relative
+                    data["spider"] = f"./{jar_relative}"
 
-            # sites 中的 api 和 ext 引用的本地文件也要转路径
+            # sites 中的 api 和 ext 引用的本地文件也要转路径（保留 ./ 前缀）
             for site in data.get("sites", []):
                 api = site.get("api", "")
                 if api.startswith("./"):
-                    site["api"] = f"{extract_to}/{api[2:]}"
+                    site["api"] = f"./{extract_to}/{api[2:]}"
                 ext = site.get("ext", "")
                 if isinstance(ext, str) and ext.startswith("./"):
-                    site["ext"] = f"{extract_to}/{ext[2:]}"
+                    site["ext"] = f"./{extract_to}/{ext[2:]}"
 
             file_count = sum(1 for _ in extract_path.rglob("*") if _.is_file())
             logger.info(f"  解压完成: {file_count} 个文件 -> {extract_path}/")
