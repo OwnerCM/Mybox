@@ -238,6 +238,52 @@
       "changeable": 0
     },
     {
+      "name": "🔗Gaze|2K",
+      "key": "Gaze",
+      "type": 3,
+      "api": "csp_GazeAmns",
+      "searchable": 1,
+      "quickSearch": 1,
+      "changeable": 0,
+      "ext": "https://gaze.red,https://gazes.store,https://gazes.top,https://gazes.host"
+    },
+    {
+      "name": "🔗哔嘀|2K",
+      "key": "Bidys",
+      "type": 3,
+      "api": "csp_BidysAmns",
+      "searchable": 1,
+      "quickSearch": 1,
+      "changeable": 0,
+      "ext": "https://v.xl01.eu.cc,https://xl02.com.de,https://v.xl02.eu.cc,https://v.xl01.cc.ua"
+    },
+    {
+      "name": "🔗厂长|2K",
+      "key": "Czzy",
+      "type": 3,
+      "api": "csp_CzzyAmns",
+      "searchable": 1,
+      "quickSearch": 1,
+      "changeable": 0,
+      "ext": {
+        "sites": "https://czzy.top,https://www.4kcz.com,https://www.cz4k.com",
+        "filters": ""
+      }
+    },
+    {
+      "name": "🔗LBV|2K",
+      "key": "Libvio",
+      "type": 3,
+      "api": "csp_LibvioAmns",
+      "searchable": 1,
+      "quickSearch": 1,
+      "changeable": 0,
+      "ext": {
+        "sites": "https://www.libvios.com,https://www.libhd.com,https://www.libvio.life",
+        "filters": ""
+      }
+    },
+    {
       "name": "⭐夏天|秒播",
       "key": "NewGrV2",
       "type": 3,
@@ -380,132 +426,6 @@
       "ext": "be125714a2413f05151fea6864509533510fc41478de761606ce64420a9d786d1766ef0968b7cb1b0b380f8d47aaca283235fd63fd19e6ac57a9a71acecc969aedb960608e1d3e2cbaa9365220d19d30711243c747442f77c21fb19b804bde8323048bc73a0ef5d5231c028e694e97122e1bfe3caf778c49dc767622f6c7cfbb12a8feb3154ad53971859304e2d7a50f24558396a1b0f9879420f15416fcd1a44fea822c8e63ddff22f6775663ea26e49ce810481083bfaebae58790814c6c91aedd7cf8d50237a5a22bed49bff6cbe937fc907cf5ce771643461426b40fc79aed7595a6b33e1942d6e93db30da5a10c6e9593dec0ea5cb378cd8a4d90c296b90aa9679a3a791a281abf5fef54ed0c3ba822bfb84d5a48fb97f9ceb65e5be0bd30a4604169f671c543a0d6a4154aee4de66de0baee995b3d9ebd02260d5c4032b8dc191de5e50dc10a5be44405c848e71ef2f7fac85814542927d39a3c5fea40a14e96688c9f4b6f5a62c949e69c66616e7ac0a24b02a746fe6257de3a5325af8f915dd59d3f75ee830ac427fd5c9c136d371beb2ae7233e21ebef3beb0b67d6ae3b8a4b4878da5bd88913145b4dd79754bb0fe8cb19ef8a547355c4795b0bd372296b3ae08227e3a8c8da641b2aad8a545863cbab2da7edf6c48fee21610ace6e05ca511fead0993d23a3a2e720b32fe86da616b34f94874f67bbd3d94b46b207487101453982db864b8aa24c6ff3326999cfbf6328c5ce176c1a01f16802ea4f615016c4a7c8bd401ee726d81f94ad56b9efe12c00e668dfdfc4f820347f71de5b36546b773f6717766c79a01611fe3c5427c6ac4c68f6d8e32b4a5400c4467ba7990c4738b6b021fcc04446eee3b473baa938bece5e1b3b5379eb7d5d079186cfe16ee6fe51202e5b90c18f59569a75944b2e932d68bb8cf9cab437f6176ab85c8b26eedfe59e5b6130b1aab2e49419d7ec0037fd83a5af3d7483bbe8d4e0e8d3033ec3db68a7c78f9100bffee32cb0247e8b647e94838f767f01cfee1a2b9836ac26a389e7340f584fbb0a8600c2ffea100993ae78fb92593ffc41211e0dda196d9d1450a3f22a56af9f4aab61c33dd3744e395aad6527687d0b0df5db85cadb66bc1bafc6bdbde8b640863433192bf091be8e148d421eca44aa1997ce4396965f3724cea8b45b416394ac32ad68cbcc6ad02cfa44bbabda8bad7c5daabe45eac86d0a8d2b203a1924d82fc3ea360436fda1a650e5a7cce58becff50eb2176a4dd90f58887b6fdb15398eefd8968ed2d859d9fd4c0c078522009ce90b59a84903d75a9fbb391deb0f3cab655b9d79e5f43b26323e7086090877472bdf01f580b4a5ead9c0ca008fdd8cba8d50641a6824daf8d0f4c992ca8c1b99723bd1b7a0c69432aca4e892096f1063a06b068127684b82e5a677f272dd45551c01a4c5f0a6e9b6fd26d871f9fd1045b65565a709cb0545882fcc593b885d29f47df475b8b1cf4f95ff61c31252f503924113c52fa72ea655e9245bce5e73427558c5fbf33a933c549dfdca79259fb8eb77d648c5f4813af11ef876e0fd65b16d3989f6d88da1026b0e53e1116e6243727dbd3a264c77d18ff7f194075f9d59f26e983276317f4dce4d2daa69538ac0c034f27f042a5595809f00945117562f16aec2501010d1b7f5521c264c1bddf8a150f5b8fde0aa5630665dc332ab2f3e490b01c7328693f22d98db1ff9599a44930cf14cec95490229c3cbf8eb9e4d083cb77cd50fe806fe469dcf3201822980b222d596e9ceb43375dd00ebc9721e344baf29f84b56000835a364cac6da64abf75f2f1fb890e24549b7b7d28874668b2463d2e790a6dda9a7d3ba00160296fa6f565436df4164bfa739161c8415a0b88c3da5b80f6439fb67e1d6aba0b8c1db798fe967334c574b9919727fb639d6cecb1f2a2a4d4c52fc3c9514efaae17b1d5c14ba1f52847c50025d1ea38cc2da904fb14f0690491ccaf4838e5a28c92a7536d735fa42a283373de3e7781201f9d7f198642f6356fc1d806f5ffa82dc79c114c70fef7e4cfd422c976f51168dd7633a0dadbac3270b9943c9b5254c1dac5688fe0f7213a3f"
     },
     {
-      "key": "賤賤",
-      "name": "💥贱片┃秒播💥",
-      "type": 3,
-      "api": "csp_WexJianPianGuard",
-      "searchable": 1,
-      "quickSearch": 1,
-      "changeable": 0,
-      "jar": "https://zl.wpscdn.cn/2026/07/23/space_img/f45313da-d63b-4484-8aa9-4a641929455b.png;md5;d2cea066e80053264949b0eec3c8719d"
-    },
-    {
-      "key": "WexWenCai",
-      "name": "💥文才┃秒播💥",
-      "type": 3,
-      "api": "csp_WexWenCaiGuard",
-      "searchable": 1,
-      "quickSearch": 1,
-      "changeable": 0,
-      "jar": "https://zl.wpscdn.cn/2026/07/23/space_img/f45313da-d63b-4484-8aa9-4a641929455b.png;md5;d2cea066e80053264949b0eec3c8719d"
-    },
-    {
-      "key": "WexDuBoKu",
-      "name": "💥独播┃秒播💥",
-      "type": 3,
-      "api": "csp_WexDuBoKuGuard",
-      "searchable": 1,
-      "quickSearch": 1,
-      "changeable": 0,
-      "jar": "https://zl.wpscdn.cn/2026/07/23/space_img/f45313da-d63b-4484-8aa9-4a641929455b.png;md5;d2cea066e80053264949b0eec3c8719d"
-    },
-    {
-      "key": "WexYueYue",
-      "name": "💥闪电┃秒播💥",
-      "type": 3,
-      "api": "csp_WexYueYueGuard",
-      "searchable": 1,
-      "quickSearch": 1,
-      "changeable": 0,
-      "jar": "https://zl.wpscdn.cn/2026/07/23/space_img/f45313da-d63b-4484-8aa9-4a641929455b.png;md5;d2cea066e80053264949b0eec3c8719d"
-    },
-    {
-      "key": "WexV6TeGou",
-      "name": "💥太狗┃秒播💥",
-      "type": 3,
-      "api": "csp_WexV6TeGouGuard",
-      "searchable": 1,
-      "quickSearch": 1,
-      "changeable": 0,
-      "jar": "https://zl.wpscdn.cn/2026/07/23/space_img/f45313da-d63b-4484-8aa9-4a641929455b.png;md5;d2cea066e80053264949b0eec3c8719d"
-    },
-    {
-      "key": "WexYiYs",
-      "name": "💥伊影┃秒播💥",
-      "type": 3,
-      "api": "csp_WexYiYsGuard",
-      "searchable": 1,
-      "quickSearch": 1,
-      "changeable": 0,
-      "jar": "https://zl.wpscdn.cn/2026/07/23/space_img/f45313da-d63b-4484-8aa9-4a641929455b.png;md5;d2cea066e80053264949b0eec3c8719d"
-    },
-    {
-      "key": "WexReBo",
-      "name": "💥热播┃秒播💥",
-      "type": 3,
-      "api": "csp_WexReBoGuard",
-      "searchable": 1,
-      "quickSearch": 1,
-      "changeable": 0,
-      "jar": "https://zl.wpscdn.cn/2026/07/23/space_img/f45313da-d63b-4484-8aa9-4a641929455b.png;md5;d2cea066e80053264949b0eec3c8719d"
-    },
-    {
-      "key": "WexBoBo",
-      "name": "🎇伯伯┃秒播🎇",
-      "type": 3,
-      "api": "csp_WexBoBoGuard",
-      "searchable": 1,
-      "quickSearch": 1,
-      "changeable": 0,
-      "jar": "https://zl.wpscdn.cn/2026/07/23/space_img/f45313da-d63b-4484-8aa9-4a641929455b.png;md5;d2cea066e80053264949b0eec3c8719d"
-    },
-    {
-      "name": "🔗Gaze|2K",
-      "key": "Gaze",
-      "type": 3,
-      "api": "csp_GazeAmns",
-      "searchable": 1,
-      "quickSearch": 1,
-      "changeable": 0,
-      "ext": "https://gaze.red,https://gazes.store,https://gazes.top,https://gazes.host"
-    },
-    {
-      "name": "🔗哔嘀|2K",
-      "key": "Bidys",
-      "type": 3,
-      "api": "csp_BidysAmns",
-      "searchable": 1,
-      "quickSearch": 1,
-      "changeable": 0,
-      "ext": "https://v.xl01.eu.cc,https://xl02.com.de,https://v.xl02.eu.cc,https://v.xl01.cc.ua"
-    },
-    {
-      "name": "🔗厂长|2K",
-      "key": "Czzy",
-      "type": 3,
-      "api": "csp_CzzyAmns",
-      "searchable": 1,
-      "quickSearch": 1,
-      "changeable": 0,
-      "ext": {
-        "sites": "https://czzy.top,https://www.4kcz.com,https://www.cz4k.com",
-        "filters": ""
-      }
-    },
-    {
-      "name": "🔗LBV|2K",
-      "key": "Libvio",
-      "type": 3,
-      "api": "csp_LibvioAmns",
-      "searchable": 1,
-      "quickSearch": 1,
-      "changeable": 0,
-      "ext": {
-        "sites": "https://www.libvios.com,https://www.libhd.com,https://www.libvio.life",
-        "filters": ""
-      }
-    },
-    {
       "name": "🧩橘汁|快速",
       "key": "Woshinidie",
       "type": 3,
@@ -573,19 +493,6 @@
       "searchable": 1,
       "quickSearch": 1,
       "changeable": 0
-    },
-    {
-      "key": "热播影视",
-      "name": "热播 • APP",
-      "type": 3,
-      "api": "csp_AppRJ",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 0,
-      "ext": {
-        "url": "http://v.rbotv.cn"
-      },
-      "jar": "https://raw.githubusercontent.com/OwnerCM/Mybox/main/xiaosa/spider.jar;md5;ed43638c03dced4ecf5b550001d55755"
     },
     {
       "key": "三秋影视",
@@ -681,27 +588,6 @@
       "jar": "https://raw.githubusercontent.com/OwnerCM/Mybox/main/xiaosa/spider.jar;md5;ed43638c03dced4ecf5b550001d55755"
     },
     {
-      "key": "橘汁",
-      "name": "橘汁 • APP",
-      "type": 3,
-      "api": "csp_AppDrama",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "ext": {
-        "appName": "橘汁",
-        "publicKey": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCr8SzZhjYy+rsya1K09t8d2K50pWFoBkgUqMpKOiW+3IEVKd4eTdvg9RSOjQ82kypL6R9BnsmrS1V8s4PVDwjQbUtYhTPPC9Hz16qY7rpD6m0d2vr09/UpWQ5uOy9PR0QTrsioveZ+DIe9jc3C+zBCu/kZSY/R8stwJoiitki3gwIDAQAB",
-        "dataKey": "DGVQRUX5R1LWWDLHTGJSUKG1DJRVPQ==",
-        "dataIv": "OC1A06E197EF10CF3F6058CA7A803B5E",
-        "pkg": "com.lxf.snzlcgtzxyx",
-        "host": "",
-        "site": "https://123-1349250429.cos.ap-shanghai.myqcloud.com/app.txt",
-        "version": "3.0.2.1",
-        "decrypt": "1"
-      },
-      "jar": "https://raw.githubusercontent.com/OwnerCM/Mybox/main/xiaosa/spider.jar;md5;ed43638c03dced4ecf5b550001d55755"
-    },
-    {
       "key": "华谊",
       "name": "华谊 • APP",
       "type": 3,
@@ -773,23 +659,6 @@
       "quickSearch": 1,
       "filterable": 1,
       "ext": "https://qpcj.69mini.com/api.php/app/",
-      "jar": "https://raw.githubusercontent.com/OwnerCM/Mybox/main/xiaosa/spider.jar;md5;ed43638c03dced4ecf5b550001d55755"
-    },
-    {
-      "key": "金牌",
-      "name": "金牌 • APP",
-      "type": 3,
-      "api": "csp_AppQi",
-      "searchable": 1,
-      "changeable": 1,
-      "ext": {
-        "url": "https://qj4.catbb.xyz",
-        "dataKey": "eecbio48dsq13kkk",
-        "dataIv": "eecbio48dsq13kkk",
-        "search": "searchList4",
-        "init": "initV122",
-        "ua": "okhttp/3.10.0"
-      },
       "jar": "https://raw.githubusercontent.com/OwnerCM/Mybox/main/xiaosa/spider.jar;md5;ed43638c03dced4ecf5b550001d55755"
     },
     {
@@ -895,13 +764,6 @@
       "jar": "https://raw.githubusercontent.com/OwnerCM/Mybox/main/xiaosa/spider.jar;md5;ed43638c03dced4ecf5b550001d55755"
     },
     {
-      "key": "瓜子影视",
-      "name": "瓜子 • 影视",
-      "type": 3,
-      "api": "csp_Gz360",
-      "jar": "https://raw.githubusercontent.com/OwnerCM/Mybox/main/xiaosa/spider.jar;md5;ed43638c03dced4ecf5b550001d55755"
-    },
-    {
       "key": "山楂影视",
       "name": "山楂 • 影视",
       "type": 3,
@@ -920,25 +782,6 @@
       "name": "独播 • 影视",
       "type": 3,
       "api": "csp_Duboku",
-      "jar": "https://raw.githubusercontent.com/OwnerCM/Mybox/main/xiaosa/spider.jar;md5;ed43638c03dced4ecf5b550001d55755"
-    },
-    {
-      "key": "厂长影视",
-      "name": "厂长 • 影视",
-      "type": 3,
-      "api": "csp_Czsapp",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "ext": "https://cz01.vip",
-      "jar": "https://raw.githubusercontent.com/OwnerCM/Mybox/main/xiaosa/spider.jar;md5;ed43638c03dced4ecf5b550001d55755"
-    },
-    {
-      "key": "金牌影视",
-      "name": "金牌 • 影视",
-      "type": 3,
-      "api": "csp_Jpys",
-      "ext": "https://y2s52n7.com,https://m.hkybqufgh.com,https://m.sizhengxt.com,https://m.9zhoukj.com,https://m.sizhengxt.com,https://m.jiabaide.cn",
       "jar": "https://raw.githubusercontent.com/OwnerCM/Mybox/main/xiaosa/spider.jar;md5;ed43638c03dced4ecf5b550001d55755"
     },
     {
@@ -1041,6 +884,66 @@
       "quickSearch": 0,
       "filterable": 0,
       "jar": "https://raw.githubusercontent.com/OwnerCM/Mybox/main/xiaosa/spider.jar;md5;ed43638c03dced4ecf5b550001d55755"
+    },
+    {
+      "key": "賤賤",
+      "name": "💥贱片┃秒播💥",
+      "type": 3,
+      "api": "csp_WexJianPianGuard",
+      "searchable": 1,
+      "quickSearch": 1,
+      "changeable": 0,
+      "jar": "https://zl.wpscdn.cn/2026/07/23/space_img/f45313da-d63b-4484-8aa9-4a641929455b.png;md5;d2cea066e80053264949b0eec3c8719d"
+    },
+    {
+      "key": "WexWenCai",
+      "name": "💥文才┃秒播💥",
+      "type": 3,
+      "api": "csp_WexWenCaiGuard",
+      "searchable": 1,
+      "quickSearch": 1,
+      "changeable": 0,
+      "jar": "https://zl.wpscdn.cn/2026/07/23/space_img/f45313da-d63b-4484-8aa9-4a641929455b.png;md5;d2cea066e80053264949b0eec3c8719d"
+    },
+    {
+      "key": "WexYueYue",
+      "name": "💥闪电┃秒播💥",
+      "type": 3,
+      "api": "csp_WexYueYueGuard",
+      "searchable": 1,
+      "quickSearch": 1,
+      "changeable": 0,
+      "jar": "https://zl.wpscdn.cn/2026/07/23/space_img/f45313da-d63b-4484-8aa9-4a641929455b.png;md5;d2cea066e80053264949b0eec3c8719d"
+    },
+    {
+      "key": "WexV6TeGou",
+      "name": "💥太狗┃秒播💥",
+      "type": 3,
+      "api": "csp_WexV6TeGouGuard",
+      "searchable": 1,
+      "quickSearch": 1,
+      "changeable": 0,
+      "jar": "https://zl.wpscdn.cn/2026/07/23/space_img/f45313da-d63b-4484-8aa9-4a641929455b.png;md5;d2cea066e80053264949b0eec3c8719d"
+    },
+    {
+      "key": "WexYiYs",
+      "name": "💥伊影┃秒播💥",
+      "type": 3,
+      "api": "csp_WexYiYsGuard",
+      "searchable": 1,
+      "quickSearch": 1,
+      "changeable": 0,
+      "jar": "https://zl.wpscdn.cn/2026/07/23/space_img/f45313da-d63b-4484-8aa9-4a641929455b.png;md5;d2cea066e80053264949b0eec3c8719d"
+    },
+    {
+      "key": "WexBoBo",
+      "name": "🎇伯伯┃秒播🎇",
+      "type": 3,
+      "api": "csp_WexBoBoGuard",
+      "searchable": 1,
+      "quickSearch": 1,
+      "changeable": 0,
+      "jar": "https://zl.wpscdn.cn/2026/07/23/space_img/f45313da-d63b-4484-8aa9-4a641929455b.png;md5;d2cea066e80053264949b0eec3c8719d"
     },
     {
       "name": "🐱番薯|动漫",
@@ -1288,35 +1191,6 @@
       "searchable": 1,
       "changeable": 0,
       "jar": "https://zl.wpscdn.cn/2026/07/23/space_img/f45313da-d63b-4484-8aa9-4a641929455b.png;md5;d2cea066e80053264949b0eec3c8719d"
-    },
-    {
-      "key": "三六零",
-      "name": "三六零 • 视频",
-      "type": 3,
-      "api": "csp_SP360",
-      "jar": "https://raw.githubusercontent.com/OwnerCM/Mybox/main/xiaosa/spider.jar;md5;ed43638c03dced4ecf5b550001d55755"
-    },
-    {
-      "key": "哆啦新番社",
-      "name": "哆啦 • 新番社",
-      "type": 3,
-      "api": "csp_XBPQ",
-      "style": {
-        "type": "list"
-      },
-      "ext": "https://raw.githubusercontent.com/OwnerCM/Mybox/main/xiaosa/XBPQ/哆啦新番社.json",
-      "jar": "https://raw.githubusercontent.com/OwnerCM/Mybox/main/xiaosa/spider.jar;md5;ed43638c03dced4ecf5b550001d55755"
-    },
-    {
-      "key": "版本信息",
-      "name": "版本 • 信息",
-      "type": 3,
-      "api": "csp_Market",
-      "searchable": 0,
-      "changeable": 0,
-      "indexs": 0,
-      "ext": "https://oss-v1.wangmeipo.cn/236/single.json",
-      "jar": "https://raw.githubusercontent.com/OwnerCM/Mybox/main/xiaosa/spider.jar;md5;ed43638c03dced4ecf5b550001d55755"
     }
   ],
   "lives": [

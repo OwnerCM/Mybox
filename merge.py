@@ -561,11 +561,11 @@ def merge_configs(configs: list, merge_settings: dict, global_config: dict, sour
 def sort_sites_by_category(sites: list, categories: list) -> list:
     """
     按分类规则对站点排序
-    每个分类定义了匹配关键词，按分类顺序排列，未匹配的放在最后
-    分类内部保持原始顺序
+    匹配分类的按顺序排列，未匹配的直接移除
     """
     # 将站点按分类归组
-    groups = [[] for _ in range(len(categories) + 1)]  # 最后一组是未分类
+    groups = [[] for _ in range(len(categories))]
+    removed = []  # 未匹配的站点（将被移除）
 
     for site in sites:
         name = site.get("name", "")
@@ -578,7 +578,26 @@ def sort_sites_by_category(sites: list, categories: list) -> list:
                 matched = True
                 break
         if not matched:
-            groups[-1].append(site)
+            removed.append(site)
+
+    # 输出被移除的站点
+    if removed:
+        # 按来源分组
+        from collections import defaultdict
+        by_source = defaultdict(list)
+        for site in removed:
+            jar = site.get("jar", "")
+            if "xiaosa" in jar:
+                src = "潇洒本地"
+            elif jar:
+                src = "王二小"
+            else:
+                src = "嗷呜"
+            by_source[src].append(site.get("name", ""))
+
+        logger.info(f"  未匹配分类移除: {len(removed)} 个站点")
+        for src, names in by_source.items():
+            logger.info(f"    [{src}] {names}")
 
     # 按顺序拼接
     result = []
