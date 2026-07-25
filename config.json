@@ -19,12 +19,6 @@
       "encrypted": false
     },
     {
-      "_说明": "王二小放牛娃，明文JSON，需要okhttp UA",
-      "name": "王二小放牛娃",
-      "url": "http://new.xn--4kq62z5rby2qupq9ub.top",
-      "encrypted": false
-    },
-    {
       "_说明": "本地自定义接口（Python爬虫等），直接追加不参与跨源去重",
       "name": "自定义",
       "url": "file://other.json",
@@ -77,7 +71,7 @@
   "sort_order": {
     "_说明": "站点分类排序规则：按关键词匹配归类，依此顺序排列。未匹配的放在最后",
     "categories": [
-      {"name": "置顶", "keywords": ["豆瓣", "更新日期", "配置", "推荐"]},
+      {"name": "置顶", "keywords": ["豆瓣", "配置", "推荐"]},
       {"name": "采集", "keywords": ["采集", "cj_"]},
       {"name": "4K网盘", "keywords": ["4K"]},
       {"name": "2K", "keywords": ["2K"]},

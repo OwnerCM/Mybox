@@ -609,23 +609,17 @@ def sort_sites_by_category(sites: list, categories: list) -> list:
 def add_update_info(merged: dict, parsed_configs: list) -> dict:
     """
     使用合并成功后的当天日期作为更新标记
-    格式：更新日期:YYYYMMDD
+    将日期追加到豆瓣推荐的 name 后面，如：🔥豆瓣推荐(20260724)
     """
     beijing_tz = timezone(timedelta(hours=8))
     today = datetime.now(beijing_tz).strftime("%Y%m%d")
 
-    # 在 sites 开头插入更新日期
-    update_site = {
-        "key": "_update_info",
-        "name": "更新日期:{}".format(today),
-        "type": 3,
-        "api": "csp_Config",
-        "searchable": 0,
-        "changeable": 0
-    }
-
+    # 找到豆瓣推荐站点，将日期追加到 name
     if "sites" in merged:
-        merged["sites"].insert(0, update_site)
+        for site in merged["sites"]:
+            if "豆瓣" in site.get("name", ""):
+                site["name"] = f"{site['name']}({today})"
+                break
 
     logger.info(f"  更新日期: {today}")
     return merged
