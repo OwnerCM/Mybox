@@ -5,7 +5,7 @@
   "danmaku": "http://127.0.0.1:2525/danmu?name={name}&epid={episode}",
   "sites": [
     {
-      "name": "🔥豆瓣推荐(20260726)",
+      "name": "🔥豆瓣推荐(20260727)",
       "key": "Douban",
       "type": 3,
       "api": "csp_DoubanAmns",
