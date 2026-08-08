@@ -1,5 +1,5 @@
 {
-  "spider": "https://nos.netease.com/ysf/5796b487b7b641255c855359718d6315.png;md5;94a90ec5cc3fc4c3d2ae1421a9cb2d38",
+  "spider": "https://zl.wpscdn.cn/2026/08/08/space_img/d7eed4be-4147-4073-bcef-b24d9a1cc61c.png;md5;f355e912bbdb249d90355e0c56d890ca",
   "wallpaper": "http://127.0.0.1:9978/proxy?do=AowuWapper&mode=2",
   "logo": "https://file.icve.com.cn/file_doc/945/35/EC508FBD046D33EC4832BB76B63B6C94.gif",
   "danmaku": "http://127.0.0.1:2525/danmu?name={name}&epid={episode}",
@@ -279,7 +279,7 @@
       "searchable": 1,
       "quickSearch": 1,
       "changeable": 0,
-      "ext": "https://v.xl01.eu.cc,https://xl02.com.de,https://v.xl02.eu.cc,https://v.xl01.cc.ua"
+      "ext": "https://v.xl.in.ua,https://v.xl01.eu.cc,https://v.xl02.eu.cc,https://v.xl01.cc.ua"
     },
     {
       "name": "🔗厂长┃2K",
@@ -453,21 +453,18 @@
       "name": "🧩橘汁┃快速",
       "key": "Woshinidie",
       "type": 3,
-      "jar": "https://file.icve.com.cn/file_doc/923/89/E6C166A7F2222B95D16551FD2EACFC4E.png;md5;e6c166a7f2222b95d16551fd2eacfc4e",
+      "jar": "https://zl.wpscdn.cn/2026/08/08/space_img/36332287-01c5-4b74-85f0-0cb070ddd57a.png;md5;0e457c08ca3c9fa3d949921cb73bb1f5",
       "api": "csp_Woshinidie",
       "searchable": 1,
       "quickSearch": 1,
       "changeable": 0,
       "ext": {
-        "host": "",
-        "version": "3.0.2.2",
-        "abid": "8192",
-        "pkg": "com.lxf.snzlcgtzxyx",
-        "md5": "47E0EE8D8CD90BA26C736719B9537A13",
-        "sha1": "BBFCC851740D2059445327D40013115C6B8A0366",
-        "keys": "11GK2we32144LO&hilUITB)FMd1khdaF,OC1A06E197EF10CF3F6058CA7A803B5E",
-        "site": "https://123-1349250429.cos.ap-shanghai.myqcloud.com/app.txt",
-        "pub": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCr8SzZhjYy+rsya1K09t8d2K50pWFoBkgUqMpKOiW+3IEVKd4eTdvg9RSOjQ82kypL6R9BnsmrS1V8s4PVDwjQbUtYhTPPC9Hz16qY7rpD6m0d2vr09/UpWQ5uOy9PR0QTrsioveZ+DIe9jc3C+zBCu/kZSY/R8stwJoiitki3gwIDAQAB"
+        "abid": "2205",
+        "version": "3.0.2.3",
+        "pkg": "com.mxj.wylcjbxyx",
+        "md5": "090DA8F91D3F60CC6CB250D86F06FE12",
+        "sha1": "3DADB42485B7F864E766479ADA6B1176D81D8D73",
+        "site": "https://123-1349250429.cos.ap-shanghai.myqcloud.com/app.txt"
       }
     },
     {
