@@ -10,29 +10,20 @@
       "searchable": 0,
       "quickSearch": 0,
       "filterable": 1,
-      "playerType": 2
-    },
-    {
-      "key": "cj_lziapi",
-      "name": "🔥量子｜采集",
-      "type": 1,
-      "api": "https://cj.lziapi.com/api.php/provide/vod/",
-      "indexs": 1,
-      "searchable": 0,
-      "quickSearch": 0,
-      "filterable": 1,
-      "playerType": 2
-    },
-    {
-      "key": "cj_ffzyapi",
-      "name": "🔥非凡｜采集",
-      "type": 1,
-      "api": "https://cj.ffzyapi.com/api.php/provide/vod/",
-      "indexs": 1,
-      "searchable": 0,
-      "quickSearch": 0,
-      "filterable": 1,
-      "playerType": 2
+      "playerType": 2,
+      "categories": [
+        "国产动漫",
+        "动漫电影",
+        "国产剧",
+        "欧美剧",
+        "香港剧",
+        "韩剧",
+        "大陆综艺",
+        "纪录片",
+        "短片",
+        "短剧",
+        "AI漫剧"
+      ]
     }
   ]
 }
