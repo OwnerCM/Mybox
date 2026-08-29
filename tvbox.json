@@ -428,7 +428,7 @@
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 0,
-      "jar": "https://raw.githubusercontent.com/OwnerCM/Mybox/main/xiaosa/spider.jar;md5;31bdab5f870fcf5efc0446a93fb56b68"
+      "jar": "https://raw.githubusercontent.com/OwnerCM/Mybox/main/xiaosa/spider.jar;md5;8d06798f76b8d68f5e378cad543ff40a"
     },
     {
       "key": "马猴影视",
@@ -445,7 +445,7 @@
         "sk": "SK-woniu-thanks",
         "ver": "1"
       },
-      "jar": "https://raw.githubusercontent.com/OwnerCM/Mybox/main/xiaosa/spider.jar;md5;31bdab5f870fcf5efc0446a93fb56b68"
+      "jar": "https://raw.githubusercontent.com/OwnerCM/Mybox/main/xiaosa/spider.jar;md5;8d06798f76b8d68f5e378cad543ff40a"
     },
     {
       "key": "韩圈",
@@ -453,7 +453,7 @@
       "type": 3,
       "api": "csp_Hxq",
       "ext": "http://www.小不点.com/api/2026/fishhxq.php",
-      "jar": "https://raw.githubusercontent.com/OwnerCM/Mybox/main/xiaosa/spider.jar;md5;31bdab5f870fcf5efc0446a93fb56b68"
+      "jar": "https://raw.githubusercontent.com/OwnerCM/Mybox/main/xiaosa/spider.jar;md5;8d06798f76b8d68f5e378cad543ff40a"
     },
     {
       "key": "剧圈99",
@@ -468,7 +468,7 @@
         "buildNumber": "2002",
         "buildSignature": "054FA8DDA4319C6B6A9B954CA5777541C993F00B1B0BD4394F7EDE48184C4594"
       },
-      "jar": "https://raw.githubusercontent.com/OwnerCM/Mybox/main/xiaosa/spider.jar;md5;31bdab5f870fcf5efc0446a93fb56b68"
+      "jar": "https://raw.githubusercontent.com/OwnerCM/Mybox/main/xiaosa/spider.jar;md5;8d06798f76b8d68f5e378cad543ff40a"
     },
     {
       "key": "半日99",
@@ -483,7 +483,7 @@
         "buildNumber": "2001",
         "buildSignature": "A40DA80A59D170CAA950CF15C18C454D47A39B26989D8B640ECD745BA71BF5DC"
       },
-      "jar": "https://raw.githubusercontent.com/OwnerCM/Mybox/main/xiaosa/spider.jar;md5;31bdab5f870fcf5efc0446a93fb56b68"
+      "jar": "https://raw.githubusercontent.com/OwnerCM/Mybox/main/xiaosa/spider.jar;md5;8d06798f76b8d68f5e378cad543ff40a"
     },
     {
       "key": "天堂",
@@ -504,7 +504,7 @@
         "version": "3.0.0.7",
         "decrypt": "0"
       },
-      "jar": "https://raw.githubusercontent.com/OwnerCM/Mybox/main/xiaosa/spider.jar;md5;31bdab5f870fcf5efc0446a93fb56b68"
+      "jar": "https://raw.githubusercontent.com/OwnerCM/Mybox/main/xiaosa/spider.jar;md5;8d06798f76b8d68f5e378cad543ff40a"
     },
     {
       "key": "华谊",
@@ -525,7 +525,7 @@
         "version": "1.0.0.4",
         "decrypt": "1"
       },
-      "jar": "https://raw.githubusercontent.com/OwnerCM/Mybox/main/xiaosa/spider.jar;md5;31bdab5f870fcf5efc0446a93fb56b68"
+      "jar": "https://raw.githubusercontent.com/OwnerCM/Mybox/main/xiaosa/spider.jar;md5;8d06798f76b8d68f5e378cad543ff40a"
     },
     {
       "key": "苹果",
@@ -546,7 +546,7 @@
         "version": "1.0.0.3",
         "decrypt": "0"
       },
-      "jar": "https://raw.githubusercontent.com/OwnerCM/Mybox/main/xiaosa/spider.jar;md5;31bdab5f870fcf5efc0446a93fb56b68"
+      "jar": "https://raw.githubusercontent.com/OwnerCM/Mybox/main/xiaosa/spider.jar;md5;8d06798f76b8d68f5e378cad543ff40a"
     },
     {
       "key": "怀桑",
@@ -562,7 +562,7 @@
         "init": "initV122",
         "ua": "okhttp/3.10.0"
       },
-      "jar": "https://raw.githubusercontent.com/OwnerCM/Mybox/main/xiaosa/spider.jar;md5;31bdab5f870fcf5efc0446a93fb56b68"
+      "jar": "https://raw.githubusercontent.com/OwnerCM/Mybox/main/xiaosa/spider.jar;md5;8d06798f76b8d68f5e378cad543ff40a"
     },
     {
       "key": "蓝鹰",
@@ -578,7 +578,7 @@
         "init": "initV122",
         "ua": "okhttp/3.10.0"
       },
-      "jar": "https://raw.githubusercontent.com/OwnerCM/Mybox/main/xiaosa/spider.jar;md5;31bdab5f870fcf5efc0446a93fb56b68"
+      "jar": "https://raw.githubusercontent.com/OwnerCM/Mybox/main/xiaosa/spider.jar;md5;8d06798f76b8d68f5e378cad543ff40a"
     },
     {
       "key": "蓝鸟",
@@ -594,7 +594,7 @@
         "init": "initV122",
         "ua": "okhttp/3.10.0"
       },
-      "jar": "https://raw.githubusercontent.com/OwnerCM/Mybox/main/xiaosa/spider.jar;md5;31bdab5f870fcf5efc0446a93fb56b68"
+      "jar": "https://raw.githubusercontent.com/OwnerCM/Mybox/main/xiaosa/spider.jar;md5;8d06798f76b8d68f5e378cad543ff40a"
     },
     {
       "key": "奇奇",
@@ -611,7 +611,7 @@
         "ua": "okhttp/3.10.0",
         "search": "searchList8"
       },
-      "jar": "https://raw.githubusercontent.com/OwnerCM/Mybox/main/xiaosa/spider.jar;md5;31bdab5f870fcf5efc0446a93fb56b68"
+      "jar": "https://raw.githubusercontent.com/OwnerCM/Mybox/main/xiaosa/spider.jar;md5;8d06798f76b8d68f5e378cad543ff40a"
     },
     {
       "key": "世界",
@@ -625,7 +625,7 @@
         "dataKey": "O3K6rYx75Q4xtiIE",
         "dataIv": "O3K6rYx75Q4xtiIE"
       },
-      "jar": "https://raw.githubusercontent.com/OwnerCM/Mybox/main/xiaosa/spider.jar;md5;31bdab5f870fcf5efc0446a93fb56b68"
+      "jar": "https://raw.githubusercontent.com/OwnerCM/Mybox/main/xiaosa/spider.jar;md5;8d06798f76b8d68f5e378cad543ff40a"
     },
     {
       "key": "魔方",
@@ -639,7 +639,7 @@
         "dataKey": "1234567887654321",
         "dataIv": "1234567887654321"
       },
-      "jar": "https://raw.githubusercontent.com/OwnerCM/Mybox/main/xiaosa/spider.jar;md5;31bdab5f870fcf5efc0446a93fb56b68"
+      "jar": "https://raw.githubusercontent.com/OwnerCM/Mybox/main/xiaosa/spider.jar;md5;8d06798f76b8d68f5e378cad543ff40a"
     },
     {
       "key": "王子",
@@ -653,7 +653,7 @@
         "dataKey": "5a9w6x58dsq6z3a6",
         "dataIv": "5a9w6x58dsq6z3a6"
       },
-      "jar": "https://raw.githubusercontent.com/OwnerCM/Mybox/main/xiaosa/spider.jar;md5;31bdab5f870fcf5efc0446a93fb56b68"
+      "jar": "https://raw.githubusercontent.com/OwnerCM/Mybox/main/xiaosa/spider.jar;md5;8d06798f76b8d68f5e378cad543ff40a"
     },
     {
       "key": "茉莉",
@@ -667,28 +667,28 @@
         "dataKey": "88689667dce61725",
         "dataIv": "88689667dce61725"
       },
-      "jar": "https://raw.githubusercontent.com/OwnerCM/Mybox/main/xiaosa/spider.jar;md5;31bdab5f870fcf5efc0446a93fb56b68"
+      "jar": "https://raw.githubusercontent.com/OwnerCM/Mybox/main/xiaosa/spider.jar;md5;8d06798f76b8d68f5e378cad543ff40a"
     },
     {
       "key": "山楂影视",
       "name": "山楂 • 影视",
       "type": 3,
       "api": "csp_PianKu8",
-      "jar": "https://raw.githubusercontent.com/OwnerCM/Mybox/main/xiaosa/spider.jar;md5;31bdab5f870fcf5efc0446a93fb56b68"
+      "jar": "https://raw.githubusercontent.com/OwnerCM/Mybox/main/xiaosa/spider.jar;md5;8d06798f76b8d68f5e378cad543ff40a"
     },
     {
       "key": "飞娱影视",
       "name": "飞娱 • 影视",
       "type": 3,
       "api": "csp_Feiyu",
-      "jar": "https://raw.githubusercontent.com/OwnerCM/Mybox/main/xiaosa/spider.jar;md5;31bdab5f870fcf5efc0446a93fb56b68"
+      "jar": "https://raw.githubusercontent.com/OwnerCM/Mybox/main/xiaosa/spider.jar;md5;8d06798f76b8d68f5e378cad543ff40a"
     },
     {
       "key": "独播影视",
       "name": "独播 • 影视",
       "type": 3,
       "api": "csp_Duboku",
-      "jar": "https://raw.githubusercontent.com/OwnerCM/Mybox/main/xiaosa/spider.jar;md5;31bdab5f870fcf5efc0446a93fb56b68"
+      "jar": "https://raw.githubusercontent.com/OwnerCM/Mybox/main/xiaosa/spider.jar;md5;8d06798f76b8d68f5e378cad543ff40a"
     },
     {
       "key": "骚火影视",
@@ -696,7 +696,7 @@
       "type": 3,
       "api": "csp_SaoHuo",
       "ext": "https://shdy5.us",
-      "jar": "https://raw.githubusercontent.com/OwnerCM/Mybox/main/xiaosa/spider.jar;md5;31bdab5f870fcf5efc0446a93fb56b68"
+      "jar": "https://raw.githubusercontent.com/OwnerCM/Mybox/main/xiaosa/spider.jar;md5;8d06798f76b8d68f5e378cad543ff40a"
     },
     {
       "key": "枫叶影视",
@@ -704,7 +704,7 @@
       "type": 3,
       "api": "csp_FengYe",
       "ext": "https://www.vip1949.com/",
-      "jar": "https://raw.githubusercontent.com/OwnerCM/Mybox/main/xiaosa/spider.jar;md5;31bdab5f870fcf5efc0446a93fb56b68"
+      "jar": "https://raw.githubusercontent.com/OwnerCM/Mybox/main/xiaosa/spider.jar;md5;8d06798f76b8d68f5e378cad543ff40a"
     },
     {
       "key": "面包影视",
@@ -718,7 +718,7 @@
         "分类": "电影$20#电视剧$21#动漫$23#综艺$22#短剧$47",
         "简介": "简介：&&"
       },
-      "jar": "https://raw.githubusercontent.com/OwnerCM/Mybox/main/xiaosa/spider.jar;md5;31bdab5f870fcf5efc0446a93fb56b68"
+      "jar": "https://raw.githubusercontent.com/OwnerCM/Mybox/main/xiaosa/spider.jar;md5;8d06798f76b8d68f5e378cad543ff40a"
     },
     {
       "key": "永乐影视",
@@ -732,7 +732,7 @@
         "类型": "动作片$6#喜剧片$7#爱情片$8#科幻片$9#奇幻片$10#恐怖片$11#剧情片$12#战争片$20#动画片$26#悬疑片$22#冒险片$23#犯罪片$24#惊悚片$45#歌舞片$46#灾难片$47#网络片$48||国产剧$13#港台剧$14#日剧$15#韩剧$33#欧美剧$16#泰剧$34#新马剧$35#其他剧$25||内地综艺$27#港台综艺$28#日本综艺$29#韩国综艺$36#欧美综艺$30#新马泰综艺$37#其他综艺$38||国产动漫$31#日本动漫$32#韩国动漫$39#港台动漫$40#新马泰动漫$41#欧美动漫$42#其他动漫$43",
         "分类url": "https://www.ylys.tv/vodshow/{cateId}-{area}-{by}-{class}-{lang}-{letter}---{catePg}---{year}.html"
       },
-      "jar": "https://raw.githubusercontent.com/OwnerCM/Mybox/main/xiaosa/spider.jar;md5;31bdab5f870fcf5efc0446a93fb56b68"
+      "jar": "https://raw.githubusercontent.com/OwnerCM/Mybox/main/xiaosa/spider.jar;md5;8d06798f76b8d68f5e378cad543ff40a"
     },
     {
       "key": "剧圈影视",
@@ -740,7 +740,7 @@
       "type": 3,
       "api": "csp_XYQHiker",
       "ext": "https://raw.githubusercontent.com/OwnerCM/Mybox/main/xiaosa/XYQHiker/剧圈影视.json",
-      "jar": "https://raw.githubusercontent.com/OwnerCM/Mybox/main/xiaosa/spider.jar;md5;31bdab5f870fcf5efc0446a93fb56b68"
+      "jar": "https://raw.githubusercontent.com/OwnerCM/Mybox/main/xiaosa/spider.jar;md5;8d06798f76b8d68f5e378cad543ff40a"
     },
     {
       "key": "1905",
@@ -750,7 +750,7 @@
       "searchable": 1,
       "quickSearch": 0,
       "filterable": 0,
-      "jar": "https://raw.githubusercontent.com/OwnerCM/Mybox/main/xiaosa/spider.jar;md5;31bdab5f870fcf5efc0446a93fb56b68"
+      "jar": "https://raw.githubusercontent.com/OwnerCM/Mybox/main/xiaosa/spider.jar;md5;8d06798f76b8d68f5e378cad543ff40a"
     },
     {
       "name": "🐱囧途┃动漫",
@@ -885,7 +885,7 @@
       "type": 3,
       "api": "csp_ShortQimao",
       "genre": "shortdrama",
-      "jar": "https://raw.githubusercontent.com/OwnerCM/Mybox/main/xiaosa/spider.jar;md5;31bdab5f870fcf5efc0446a93fb56b68"
+      "jar": "https://raw.githubusercontent.com/OwnerCM/Mybox/main/xiaosa/spider.jar;md5;8d06798f76b8d68f5e378cad543ff40a"
     },
     {
       "key": "河马短剧",
@@ -893,7 +893,7 @@
       "type": 3,
       "api": "csp_ShortHema",
       "genre": "shortdrama",
-      "jar": "https://raw.githubusercontent.com/OwnerCM/Mybox/main/xiaosa/spider.jar;md5;31bdab5f870fcf5efc0446a93fb56b68"
+      "jar": "https://raw.githubusercontent.com/OwnerCM/Mybox/main/xiaosa/spider.jar;md5;8d06798f76b8d68f5e378cad543ff40a"
     },
     {
       "key": "好看短剧",
@@ -901,7 +901,7 @@
       "type": 3,
       "api": "csp_ShortHaokan",
       "genre": "shortdrama",
-      "jar": "https://raw.githubusercontent.com/OwnerCM/Mybox/main/xiaosa/spider.jar;md5;31bdab5f870fcf5efc0446a93fb56b68"
+      "jar": "https://raw.githubusercontent.com/OwnerCM/Mybox/main/xiaosa/spider.jar;md5;8d06798f76b8d68f5e378cad543ff40a"
     },
     {
       "key": "星芽短剧",
@@ -909,7 +909,7 @@
       "type": 3,
       "api": "csp_ShortXingya",
       "genre": "shortdrama",
-      "jar": "https://raw.githubusercontent.com/OwnerCM/Mybox/main/xiaosa/spider.jar;md5;31bdab5f870fcf5efc0446a93fb56b68"
+      "jar": "https://raw.githubusercontent.com/OwnerCM/Mybox/main/xiaosa/spider.jar;md5;8d06798f76b8d68f5e378cad543ff40a"
     },
     {
       "key": "果果短剧",
@@ -922,7 +922,7 @@
         "分类": "重生$1#穿越$2#爽剧$3#言情$4#都市$5#古装$6#悬疑$7#剧情$8",
         "分类url": "https://www.mochadj.com/i/{cateId}-{catePg}.html"
       },
-      "jar": "https://raw.githubusercontent.com/OwnerCM/Mybox/main/xiaosa/spider.jar;md5;31bdab5f870fcf5efc0446a93fb56b68"
+      "jar": "https://raw.githubusercontent.com/OwnerCM/Mybox/main/xiaosa/spider.jar;md5;8d06798f76b8d68f5e378cad543ff40a"
     }
   ],
   "lives": [
@@ -1364,5 +1364,10 @@
         "document.querySelector(\"#playleftiframe\").contentWindow.document.querySelector(\"#start\").click();"
       ]
     }
+  ],
+  "ads": [
+    "mozai.4gtv.tv",
+    "pv.vipwm.cc",
+    "static-mozai.4gtv.tv"
   ]
 }
