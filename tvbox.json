@@ -1,5 +1,5 @@
 {
-  "spider": "https://zl.wpscdn.cn/2026/09/10/space_img/8855908f-fbfb-4ad7-9f00-306ded723478.png;md5;0bbd964a1c18fa08bdf21c667b267f94",
+  "spider": "https://zl.wpscdn.cn/2026/09/11/space_img/00d57d76-d36a-4666-808a-9f53c4c133a3.png;md5;1b1fe32a75667040acdb5462f4ed822d",
   "wallpaper": "http://127.0.0.1:9978/proxy?do=AowuWapper&mode=2",
   "logo": "https://file.icve.com.cn/file_doc/945/35/EC508FBD046D33EC4832BB76B63B6C94.gif",
   "danmaku": "http://127.0.0.1:2525/danmu?name={name}&epid={episode}",
@@ -80,26 +80,6 @@
       "ext": "moWobg"
     },
     {
-      "name": "☁️二小┃4K",
-      "key": "exWobg",
-      "type": 3,
-      "api": "csp_WobgAmns",
-      "searchable": 1,
-      "quickSearch": 1,
-      "changeable": 0,
-      "ext": "exWobg"
-    },
-    {
-      "name": "☁️至臻┃4K",
-      "key": "zzWobg",
-      "type": 3,
-      "api": "csp_WobgAmns",
-      "searchable": 1,
-      "quickSearch": 1,
-      "changeable": 0,
-      "ext": "zzWobg"
-    },
-    {
       "name": "☁️闪电┃4K",
       "key": "yxWobg",
       "type": 3,
@@ -120,16 +100,6 @@
       "ext": "ddWobg"
     },
     {
-      "name": "☁️蜡笔┃4K",
-      "key": "lbWobg",
-      "type": 3,
-      "api": "csp_WobgAmns",
-      "searchable": 1,
-      "quickSearch": 1,
-      "changeable": 0,
-      "ext": "lbWobg"
-    },
-    {
       "name": "☁️虎斑┃4K",
       "key": "hbWobg",
       "type": 3,
@@ -148,6 +118,16 @@
       "quickSearch": 1,
       "changeable": 0,
       "ext": "SeedHub"
+    },
+    {
+      "name": "☁️盘库┃4K",
+      "key": "Panku",
+      "type": 3,
+      "api": "csp_PankuAmns",
+      "searchable": 1,
+      "quickSearch": 1,
+      "changeable": 0,
+      "ext": "Panku"
     },
     {
       "name": "☁️七味┃4K",
@@ -369,7 +349,7 @@
       "name": "🧩橘汁┃快速",
       "key": "Woshinidie",
       "type": 3,
-      "jar": "https://zl.wpscdn.cn/2026/09/10/space_img/d657e4e4-ef57-493c-9947-f287c4fb51a4.png;md5;80e2ca19f7ffc4d3536f13e6e3a18512",
+      "jar": "https://zl.wpscdn.cn/2026/09/11/space_img/0f5c235d-ee40-42a0-a19a-b7f29986c51c.png;md5;7a2cb30dc4937d27e57288b5c381e19c",
       "api": "csp_Woshinidie",
       "searchable": 1,
       "quickSearch": 1,
@@ -424,10 +404,10 @@
       "changeable": 0
     },
     {
-      "name": "🐱囧途┃动漫",
-      "key": "DMcyc",
+      "name": "🐱番薯┃动漫",
+      "key": "DMfans",
       "type": 3,
-      "api": "csp_DMcycAmns",
+      "api": "csp_DMfansAmns",
       "searchable": 1,
       "quickSearch": 1,
       "changeable": 0
@@ -437,15 +417,6 @@
       "key": "DMox",
       "type": 3,
       "api": "csp_DMoxAmns",
-      "searchable": 1,
-      "quickSearch": 1,
-      "changeable": 0
-    },
-    {
-      "name": "🐱番薯┃动漫",
-      "key": "DMfans",
-      "type": 3,
-      "api": "csp_DMfansAmns",
       "searchable": 1,
       "quickSearch": 1,
       "changeable": 0
