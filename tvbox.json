@@ -1,11 +1,11 @@
 {
-  "spider": "https://nos.netease.com/vcloud-statistic/nrtc/75b0af3e-1176-4828-b210-f9f8357fb3d6.png;md5;b1823304909b079fb81e333310a30759",
+  "spider": "https://nos.netease.com/vcloud-statistic/nrtc/c87d9ab3-a239-4d2a-9d44-56fec5106130.png;md5;2dd93067babd96be152a4ef45e2ce7f8",
   "wallpaper": "http://127.0.0.1:9978/proxy?do=AowuWapper&mode=2",
   "logo": "https://file.icve.com.cn/file_doc/945/35/EC508FBD046D33EC4832BB76B63B6C94.gif",
   "danmaku": "http://127.0.0.1:2525/danmu?name={name}&epid={episode}",
   "sites": [
     {
-      "name": "🔥豆瓣┃推荐(20261107)",
+      "name": "🔥豆瓣┃推荐(20261108)",
       "key": "Douban",
       "type": 3,
       "api": "csp_DoubanAmns",
@@ -423,10 +423,10 @@
       "changeable": 1
     },
     {
-      "name": "🐱青云┃动漫",
-      "key": "DMqingk",
+      "name": "🐱快快┃动漫",
+      "key": "DMlmm",
       "type": 3,
-      "api": "csp_DMqingkAmns",
+      "api": "csp_DMlmmAmns",
       "searchable": 1,
       "quickSearch": 1,
       "changeable": 1
@@ -438,8 +438,7 @@
       "api": "csp_DMxiguaAmns",
       "searchable": 1,
       "quickSearch": 1,
-      "changeable": 1,
-      "ext": "DMxigua"
+      "changeable": 1
     },
     {
       "name": "🐱魔都┃动漫",
