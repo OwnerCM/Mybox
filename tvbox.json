@@ -1,11 +1,11 @@
 {
-  "spider": "https://nos.netease.com/vcloud-statistic/nrtc/ebab8029-2b87-42f8-a964-ec1ca3de4052.png;md5;bb065fc30372ceee6fb15feec0c6a5fe",
+  "spider": "https://fmsc525.oss-cn-hangzhou.aliyuncs.com/upload/235/20261111/04d7de872fa893cd2cf6139cab519da0.png;md5;6870d54372a2b98ee6f327bae3541dbd",
   "wallpaper": "http://127.0.0.1:9978/proxy?do=AowuWapper&mode=2",
   "logo": "https://file.icve.com.cn/file_doc/945/35/EC508FBD046D33EC4832BB76B63B6C94.gif",
   "danmaku": "http://127.0.0.1:2525/danmu?name={name}&epid={episode}",
   "sites": [
     {
-      "name": "🔥豆瓣┃推荐(20261111)",
+      "name": "🔥豆瓣┃推荐(20261112)",
       "key": "Douban",
       "type": 3,
       "api": "csp_DoubanAmns",
@@ -35,6 +35,15 @@
       "quickSearch": 0,
       "changeable": 0,
       "ext": "Xxxg"
+    },
+    {
+      "name": "🔥下饭┃推荐",
+      "key": "Xfdh",
+      "type": 3,
+      "api": "csp_XfdhAmns",
+      "searchable": 0,
+      "quickSearch": 0,
+      "changeable": 0
     },
     {
       "name": "⚙️配置┃中心",
