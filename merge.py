@@ -568,12 +568,13 @@ def sort_sites_by_category(sites: list, categories: list) -> list:
     removed = []  # 未匹配的站点（将被移除）
 
     for site in sites:
-        name = site.get("name", "")
-        key = site.get("key", "")
+        # 去除空白后再匹配，兼容上游将 "4K" 改写为 "4 K" 等情况
+        name = re.sub(r"\s+", "", site.get("name", ""))
+        key = re.sub(r"\s+", "", site.get("key", ""))
         matched = False
         for i, cat in enumerate(categories):
-            keywords = cat.get("keywords", [])
-            if any(kw in name or kw in key for kw in keywords):
+            keywords = [re.sub(r"\s+", "", kw) for kw in cat.get("keywords", [])]
+            if any(kw and (kw in name or kw in key) for kw in keywords):
                 groups[i].append(site)
                 matched = True
                 break

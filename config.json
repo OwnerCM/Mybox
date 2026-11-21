@@ -12,11 +12,9 @@
     {
       "_说明": "潇洒本地包，ZIP格式，自动下载解压，使用其中的api.json和配套文件",
       "name": "潇洒本地",
-      "url": "https://oss-v1.wangmeipo.cn/236/单线路.zip",
-      "format": "zip",
-      "zip_root": "TVBoxOSC/tvbox",
-      "zip_extract_to": "xiaosa",
-      "encrypted": false
+      "url": "https://www.xn--z4q29k40t.com/api.json",
+      "encrypted": true,
+      "format": "json"
     },
     {
       "_说明": "本地自定义接口（Python爬虫等），直接追加不参与跨源去重",
@@ -74,7 +72,7 @@
       {"name": "置顶", "keywords": ["豆瓣", "配置", "推荐"]},
       {"name": "采集", "keywords": ["采集", "cj_"]},
       {"name": "4K网盘", "keywords": ["4K"]},
-      {"name": "2K", "keywords": ["2K"]},
+      {"name": "2K", "keywords": ["2K", "蓝光"]},
       {"name": "影视", "keywords": ["秒播", "快速", "APP", "影视"]},
       {"name": "动漫", "keywords": ["动漫"]},
       {"name": "短剧", "keywords": ["短剧", "漫剧", "漫短"]}
