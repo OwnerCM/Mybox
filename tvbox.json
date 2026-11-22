@@ -1,11 +1,11 @@
 {
-  "spider": "https://nos.netease.com/vcloud-statistic/nrtc/06f4e557-b688-4920-86c3-6f1475e9a7c2.png;md5;e76d6f0107817970b9f57d7d29129efe",
+  "spider": "https://nos.netease.com/vcloud-statistic/nrtc/4f052dfd-2873-4f1e-9c42-c3f444fc60fa.png;md5;b67c6648a07391b7bee0fc0848ada8eb",
   "wallpaper": "http://127.0.0.1:9978/proxy?do=AowuWapper&mode=2",
   "logo": "https://file.icve.com.cn/file_doc/945/35/EC508FBD046D33EC4832BB76B63B6C94.gif",
   "danmaku": "http://127.0.0.1:2525/danmu?name={name}&epid={episode}",
   "sites": [
     {
-      "name": "🔥豆瓣┃推荐(20261122)",
+      "name": "🔥┃豆瓣┃推荐(20261123)",
       "key": "Douban",
       "type": 3,
       "api": "csp_DoubanAmns",
@@ -16,7 +16,7 @@
       "ext": "Douban"
     },
     {
-      "name": "⚙️配置┃中心",
+      "name": "⚙️┃配置┃中心",
       "key": "MyConfig",
       "type": 3,
       "api": "csp_AAConfigAmns",
@@ -25,7 +25,7 @@
       "changeable": 0
     },
     {
-      "name": "🔥短剧┃推荐",
+      "name": "🔥┃短剧┃推荐",
       "key": "Hgdh",
       "type": 3,
       "api": "csp_HgdhAmns",
@@ -36,7 +36,7 @@
       "ext": "Hgdh"
     },
     {
-      "name": "🔥经典┃推荐",
+      "name": "🔥┃经典┃推荐",
       "key": "Xxxg",
       "type": 3,
       "api": "csp_XxxgAmns",
@@ -46,7 +46,7 @@
       "ext": "Xxxg"
     },
     {
-      "name": "🔥下饭┃推荐",
+      "name": "🔥┃下饭┃推荐",
       "key": "Xfdh",
       "type": 3,
       "api": "csp_XfdhAmns",
@@ -79,7 +79,7 @@
       ]
     },
     {
-      "name": "🌟玩偶┃4 K",
+      "name": "🌟┃玩偶┃4 K",
       "key": "woWogg",
       "type": 3,
       "api": "csp_WoggAmns",
@@ -89,7 +89,7 @@
       "ext": "woWogg"
     },
     {
-      "name": "🌟木偶┃4 K",
+      "name": "🌟┃木偶┃4 K",
       "key": "moWobg",
       "type": 3,
       "api": "csp_WobgAmns",
@@ -99,7 +99,7 @@
       "ext": "moWobg"
     },
     {
-      "name": "💎花卷┃4 K",
+      "name": "💎┃花卷┃4 K",
       "key": "PanHj",
       "type": 3,
       "api": "csp_PanHjAmns",
@@ -109,7 +109,7 @@
       "ext": "PanHj"
     },
     {
-      "name": "💎多多┃4 K",
+      "name": "💎┃多多┃4 K",
       "key": "ddWobg",
       "type": 3,
       "api": "csp_WobgAmns",
@@ -119,7 +119,7 @@
       "ext": "ddWobg"
     },
     {
-      "name": "💎虎斑┃4 K",
+      "name": "💎┃虎斑┃4 K",
       "key": "hbWobg",
       "type": 3,
       "api": "csp_WobgAmns",
@@ -129,7 +129,7 @@
       "ext": "hbWobg"
     },
     {
-      "name": "💎蜡笔┃4 K",
+      "name": "💎┃蜡笔┃4 K",
       "key": "lbWobg",
       "type": 3,
       "api": "csp_WobgAmns",
@@ -139,7 +139,7 @@
       "ext": "lbWobg"
     },
     {
-      "name": "💎️闪电┃4 K",
+      "name": "💎️┃闪电┃4 K",
       "key": "sdWobg",
       "type": 3,
       "api": "csp_WobgAmns",
@@ -149,7 +149,7 @@
       "ext": "sdWobg"
     },
     {
-      "name": "💎Sed┃4 K",
+      "name": "💎┃Sed┃4 K",
       "key": "SeedHub",
       "type": 3,
       "api": "csp_SeedHubAmns",
@@ -159,7 +159,7 @@
       "ext": "SeedHub"
     },
     {
-      "name": "💎七味┃4 K",
+      "name": "💎┃七味┃4 K",
       "key": "Qiwei",
       "type": 3,
       "api": "csp_QiweiAmns",
@@ -169,7 +169,7 @@
       "ext": "Qiwei"
     },
     {
-      "name": "💎原盘┃4 K",
+      "name": "💎┃原盘┃4 K",
       "key": "Zhinan",
       "type": 3,
       "api": "csp_ZhinanAmns",
@@ -179,7 +179,7 @@
       "ext": "Zhinan"
     },
     {
-      "name": "💎逸动┃4 K",
+      "name": "💎┃逸动┃4 K",
       "key": "SheQuyd",
       "type": 3,
       "api": "csp_SheQuydAmns",
@@ -188,7 +188,7 @@
       "changeable": 1
     },
     {
-      "name": "💎123┃4 K",
+      "name": "💎┃123┃4 K",
       "key": "SheQu123",
       "type": 3,
       "api": "csp_SheQu123Amns",
@@ -197,7 +197,7 @@
       "changeable": 1
     },
     {
-      "name": "💎蜗牛┃4 K",
+      "name": "💎┃蜗牛┃4 K",
       "key": "SheQuwon",
       "type": 3,
       "api": "csp_SheQuwonAmns",
@@ -206,17 +206,7 @@
       "changeable": 1
     },
     {
-      "name": "🛸哔嘀┃蓝光",
-      "key": "Bidys",
-      "type": 3,
-      "api": "csp_BidysAmns",
-      "searchable": 1,
-      "quickSearch": 1,
-      "changeable": 1,
-      "ext": "Bidys"
-    },
-    {
-      "name": "🛸厂长┃蓝光",
+      "name": "🛸┃厂长┃蓝光",
       "key": "Czzy",
       "type": 3,
       "api": "csp_CzzyAmns",
@@ -226,7 +216,7 @@
       "ext": "Czzy"
     },
     {
-      "name": "🛸LBV┃蓝光",
+      "name": "🛸┃LBV┃蓝光",
       "key": "Libvio",
       "type": 3,
       "api": "csp_LibvioAmns",
@@ -236,7 +226,7 @@
       "ext": "Libvio"
     },
     {
-      "name": "🚀韩剧┃秒播",
+      "name": "🚀┃韩剧┃秒播",
       "key": "Hxq",
       "type": 3,
       "api": "csp_HxqAmns",
@@ -245,7 +235,7 @@
       "changeable": 1
     },
     {
-      "name": "🚀瓜子┃秒播",
+      "name": "🚀┃瓜子┃秒播",
       "key": "Guazi",
       "type": 3,
       "api": "csp_GuaziAmns",
@@ -255,7 +245,7 @@
       "ext": "Guazi"
     },
     {
-      "name": "🚀金牌┃秒播",
+      "name": "🚀┃金牌┃秒播",
       "key": "JinPai",
       "type": 3,
       "api": "csp_JinPaiAmns",
@@ -264,7 +254,7 @@
       "changeable": 1
     },
     {
-      "name": "🚀秋天┃秒播",
+      "name": "🚀┃秋天┃秒播",
       "key": "NewGrV2",
       "type": 3,
       "api": "csp_NewGrV2Amns",
@@ -274,7 +264,7 @@
       "ext": "NewGrV2"
     },
     {
-      "name": "📦师兄┃APP",
+      "name": "📦┃师兄┃APP",
       "key": "AppV7Dsx",
       "type": 3,
       "api": "csp_AppV7Amns",
@@ -284,7 +274,7 @@
       "ext": "AppV7Dsx"
     },
     {
-      "name": "📦浮舟┃APP",
+      "name": "📦┃浮舟┃APP",
       "key": "AppV7Fz",
       "type": 3,
       "api": "csp_AppV7Amns",
@@ -294,7 +284,7 @@
       "ext": "AppV7Fz"
     },
     {
-      "name": "📦星野┃APP",
+      "name": "📦┃星野┃APP",
       "key": "AppV7Xy",
       "type": 3,
       "api": "csp_AppV7Amns",
@@ -304,7 +294,7 @@
       "ext": "AppV7Xy"
     },
     {
-      "name": "📦织锦┃APP",
+      "name": "📦┃织锦┃APP",
       "key": "AppV7Zjdr",
       "type": 3,
       "api": "csp_AppV7Amns",
@@ -314,7 +304,7 @@
       "ext": "AppV7Zjdr"
     },
     {
-      "name": "📦玄珠┃APP",
+      "name": "📦┃玄珠┃APP",
       "key": "AppV7Xyz",
       "type": 3,
       "api": "csp_AppV7Amns",
@@ -324,7 +314,7 @@
       "ext": "AppV7Xyz"
     },
     {
-      "name": "📦衔梦┃APP",
+      "name": "📦┃衔梦┃APP",
       "key": "AppV7Xnm",
       "type": 3,
       "api": "csp_AppV7Amns",
@@ -334,7 +324,7 @@
       "ext": "AppV7Xnm"
     },
     {
-      "name": "📦鸣泉┃APP",
+      "name": "📦┃鸣泉┃APP",
       "key": "AppV7Mtq",
       "type": 3,
       "api": "csp_AppV7Amns",
@@ -344,7 +334,7 @@
       "ext": "AppV7Mtq"
     },
     {
-      "name": "📦琳琅┃APP",
+      "name": "📦┃琳琅┃APP",
       "key": "AppV7Llq",
       "type": 3,
       "api": "csp_AppV7Amns",
@@ -354,7 +344,7 @@
       "ext": "AppV7Llq"
     },
     {
-      "name": "📦衔石┃APP",
+      "name": "📦┃衔石┃APP",
       "key": "AppV7Xsz",
       "type": 3,
       "api": "csp_AppV7Amns",
@@ -364,7 +354,7 @@
       "ext": "AppV7Xsz"
     },
     {
-      "name": "📦星海┃APP",
+      "name": "📦┃星海┃APP",
       "key": "AppV7Xhr",
       "type": 3,
       "api": "csp_AppV7Amns",
@@ -374,7 +364,7 @@
       "ext": "AppV7Xhr"
     },
     {
-      "name": "🔆橘汁┃快速",
+      "name": "🔆┃橘汁┃快速",
       "key": "Juzhi",
       "type": 3,
       "api": "csp_JuzhiAmns",
@@ -384,7 +374,7 @@
       "ext": "Juzhi"
     },
     {
-      "name": "🔆热播┃快速",
+      "name": "🔆┃热播┃快速",
       "key": "Rbys",
       "type": 3,
       "api": "csp_RbysAmns",
@@ -394,7 +384,7 @@
       "ext": "Rbys"
     },
     {
-      "name": "🔆杜北┃秒播",
+      "name": "🔆┃杜北┃快速",
       "key": "Dubk",
       "type": 3,
       "api": "csp_DubkAmns",
@@ -404,7 +394,7 @@
       "ext": "Dubk"
     },
     {
-      "name": "🔆荐片┃快速",
+      "name": "🔆┃荐片┃快速",
       "key": "JPian",
       "type": 3,
       "api": "csp_JPianAmns",
@@ -421,7 +411,7 @@
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
-      "jar": "https://aly2.tuchuangyun.top/autoupload/g1b6f/20261121/6n97/0X0/11212343.png;md5;efdb2c1d9a2e8c26e5a74ba5f53dfc56"
+      "jar": "https://aly2.tuchuangyun.top/autoupload/g1b6f/20261122/dXpY/0X0/11221706.png;md5;13a3d15bdc38794e575853c4c9b9e24e"
     },
     {
       "key": "未来",
@@ -431,7 +421,7 @@
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 0,
-      "jar": "https://aly2.tuchuangyun.top/autoupload/g1b6f/20261121/6n97/0X0/11212343.png;md5;efdb2c1d9a2e8c26e5a74ba5f53dfc56"
+      "jar": "https://aly2.tuchuangyun.top/autoupload/g1b6f/20261122/dXpY/0X0/11221706.png;md5;13a3d15bdc38794e575853c4c9b9e24e"
     },
     {
       "key": "快映fox",
@@ -442,7 +432,7 @@
       "quickSearch": 1,
       "filterable": 0,
       "ext": "https://www.pjb777.top/ky4kbgq7b273.json",
-      "jar": "https://aly2.tuchuangyun.top/autoupload/g1b6f/20261121/6n97/0X0/11212343.png;md5;efdb2c1d9a2e8c26e5a74ba5f53dfc56"
+      "jar": "https://aly2.tuchuangyun.top/autoupload/g1b6f/20261122/dXpY/0X0/11221706.png;md5;13a3d15bdc38794e575853c4c9b9e24e"
     },
     {
       "key": "一起影视",
@@ -452,7 +442,7 @@
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 0,
-      "jar": "https://aly2.tuchuangyun.top/autoupload/g1b6f/20261121/6n97/0X0/11212343.png;md5;efdb2c1d9a2e8c26e5a74ba5f53dfc56"
+      "jar": "https://aly2.tuchuangyun.top/autoupload/g1b6f/20261122/dXpY/0X0/11221706.png;md5;13a3d15bdc38794e575853c4c9b9e24e"
     },
     {
       "key": "咕噜",
@@ -462,7 +452,7 @@
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
-      "jar": "https://aly2.tuchuangyun.top/autoupload/g1b6f/20261121/6n97/0X0/11212343.png;md5;efdb2c1d9a2e8c26e5a74ba5f53dfc56"
+      "jar": "https://aly2.tuchuangyun.top/autoupload/g1b6f/20261122/dXpY/0X0/11221706.png;md5;13a3d15bdc38794e575853c4c9b9e24e"
     },
     {
       "key": "布布",
@@ -480,7 +470,7 @@
         "client": "8f3d2a1c7b6e5d4c9a0b1f2e3d4c5b6a",
         "sign": "ddtvf65f3a83d6d9ad6f"
       },
-      "jar": "https://aly2.tuchuangyun.top/autoupload/g1b6f/20261121/6n97/0X0/11212343.png;md5;efdb2c1d9a2e8c26e5a74ba5f53dfc56"
+      "jar": "https://aly2.tuchuangyun.top/autoupload/g1b6f/20261122/dXpY/0X0/11221706.png;md5;13a3d15bdc38794e575853c4c9b9e24e"
     },
     {
       "key": "马猴影视",
@@ -497,7 +487,7 @@
         "sk": "SK-woniu-thanks",
         "ver": "1"
       },
-      "jar": "https://aly2.tuchuangyun.top/autoupload/g1b6f/20261121/6n97/0X0/11212343.png;md5;efdb2c1d9a2e8c26e5a74ba5f53dfc56"
+      "jar": "https://aly2.tuchuangyun.top/autoupload/g1b6f/20261122/dXpY/0X0/11221706.png;md5;13a3d15bdc38794e575853c4c9b9e24e"
     },
     {
       "key": "韩圈",
@@ -507,7 +497,7 @@
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
-      "jar": "https://aly2.tuchuangyun.top/autoupload/g1b6f/20261121/6n97/0X0/11212343.png;md5;efdb2c1d9a2e8c26e5a74ba5f53dfc56"
+      "jar": "https://aly2.tuchuangyun.top/autoupload/g1b6f/20261122/dXpY/0X0/11221706.png;md5;13a3d15bdc38794e575853c4c9b9e24e"
     },
     {
       "key": "剧圈99",
@@ -522,7 +512,7 @@
         "buildNumber": "2002",
         "buildSignature": "054FA8DDA4319C6B6A9B954CA5777541C993F00B1B0BD4394F7EDE48184C4594"
       },
-      "jar": "https://aly2.tuchuangyun.top/autoupload/g1b6f/20261121/6n97/0X0/11212343.png;md5;efdb2c1d9a2e8c26e5a74ba5f53dfc56"
+      "jar": "https://aly2.tuchuangyun.top/autoupload/g1b6f/20261122/dXpY/0X0/11221706.png;md5;13a3d15bdc38794e575853c4c9b9e24e"
     },
     {
       "key": "半日99",
@@ -537,7 +527,7 @@
         "buildNumber": "2001",
         "buildSignature": "A40DA80A59D170CAA950CF15C18C454D47A39B26989D8B640ECD745BA71BF5DC"
       },
-      "jar": "https://aly2.tuchuangyun.top/autoupload/g1b6f/20261121/6n97/0X0/11212343.png;md5;efdb2c1d9a2e8c26e5a74ba5f53dfc56"
+      "jar": "https://aly2.tuchuangyun.top/autoupload/g1b6f/20261122/dXpY/0X0/11221706.png;md5;13a3d15bdc38794e575853c4c9b9e24e"
     },
     {
       "key": "天堂",
@@ -558,7 +548,7 @@
         "version": "3.0.0.7",
         "decrypt": "0"
       },
-      "jar": "https://aly2.tuchuangyun.top/autoupload/g1b6f/20261121/6n97/0X0/11212343.png;md5;efdb2c1d9a2e8c26e5a74ba5f53dfc56"
+      "jar": "https://aly2.tuchuangyun.top/autoupload/g1b6f/20261122/dXpY/0X0/11221706.png;md5;13a3d15bdc38794e575853c4c9b9e24e"
     },
     {
       "key": "华谊",
@@ -579,7 +569,7 @@
         "version": "6.0.0.1",
         "decrypt": "0"
       },
-      "jar": "https://aly2.tuchuangyun.top/autoupload/g1b6f/20261121/6n97/0X0/11212343.png;md5;efdb2c1d9a2e8c26e5a74ba5f53dfc56"
+      "jar": "https://aly2.tuchuangyun.top/autoupload/g1b6f/20261122/dXpY/0X0/11221706.png;md5;13a3d15bdc38794e575853c4c9b9e24e"
     },
     {
       "key": "苹果",
@@ -600,7 +590,7 @@
         "version": "1.0.0.3",
         "decrypt": "0"
       },
-      "jar": "https://aly2.tuchuangyun.top/autoupload/g1b6f/20261121/6n97/0X0/11212343.png;md5;efdb2c1d9a2e8c26e5a74ba5f53dfc56"
+      "jar": "https://aly2.tuchuangyun.top/autoupload/g1b6f/20261122/dXpY/0X0/11221706.png;md5;13a3d15bdc38794e575853c4c9b9e24e"
     },
     {
       "key": "蓝鹰",
@@ -616,7 +606,7 @@
         "init": "initV122",
         "ua": "okhttp/3.10.0"
       },
-      "jar": "https://aly2.tuchuangyun.top/autoupload/g1b6f/20261121/6n97/0X0/11212343.png;md5;efdb2c1d9a2e8c26e5a74ba5f53dfc56"
+      "jar": "https://aly2.tuchuangyun.top/autoupload/g1b6f/20261122/dXpY/0X0/11221706.png;md5;13a3d15bdc38794e575853c4c9b9e24e"
     },
     {
       "key": "蓝鸟",
@@ -632,7 +622,7 @@
         "init": "initV122",
         "ua": "okhttp/3.10.0"
       },
-      "jar": "https://aly2.tuchuangyun.top/autoupload/g1b6f/20261121/6n97/0X0/11212343.png;md5;efdb2c1d9a2e8c26e5a74ba5f53dfc56"
+      "jar": "https://aly2.tuchuangyun.top/autoupload/g1b6f/20261122/dXpY/0X0/11221706.png;md5;13a3d15bdc38794e575853c4c9b9e24e"
     },
     {
       "key": "王子",
@@ -646,7 +636,7 @@
         "dataKey": "5a9w6x58dsq6z3a6",
         "dataIv": "5a9w6x58dsq6z3a6"
       },
-      "jar": "https://aly2.tuchuangyun.top/autoupload/g1b6f/20261121/6n97/0X0/11212343.png;md5;efdb2c1d9a2e8c26e5a74ba5f53dfc56"
+      "jar": "https://aly2.tuchuangyun.top/autoupload/g1b6f/20261122/dXpY/0X0/11221706.png;md5;13a3d15bdc38794e575853c4c9b9e24e"
     },
     {
       "key": "茉莉Get",
@@ -660,28 +650,28 @@
         "dataKey": "88689667dce61725",
         "dataIv": "88689667dce61725"
       },
-      "jar": "https://aly2.tuchuangyun.top/autoupload/g1b6f/20261121/6n97/0X0/11212343.png;md5;efdb2c1d9a2e8c26e5a74ba5f53dfc56"
+      "jar": "https://aly2.tuchuangyun.top/autoupload/g1b6f/20261122/dXpY/0X0/11221706.png;md5;13a3d15bdc38794e575853c4c9b9e24e"
     },
     {
       "key": "看剧",
       "name": "看剧 • 影视",
       "type": 3,
       "api": "csp_KanJuAI",
-      "jar": "https://aly2.tuchuangyun.top/autoupload/g1b6f/20261121/6n97/0X0/11212343.png;md5;efdb2c1d9a2e8c26e5a74ba5f53dfc56"
+      "jar": "https://aly2.tuchuangyun.top/autoupload/g1b6f/20261122/dXpY/0X0/11221706.png;md5;13a3d15bdc38794e575853c4c9b9e24e"
     },
     {
       "key": "懂片",
       "name": "懂片 • 影视",
       "type": 3,
       "api": "csp_DongPian",
-      "jar": "https://aly2.tuchuangyun.top/autoupload/g1b6f/20261121/6n97/0X0/11212343.png;md5;efdb2c1d9a2e8c26e5a74ba5f53dfc56"
+      "jar": "https://aly2.tuchuangyun.top/autoupload/g1b6f/20261122/dXpY/0X0/11221706.png;md5;13a3d15bdc38794e575853c4c9b9e24e"
     },
     {
       "key": "星辰影视",
       "name": "星辰 • 影视",
       "type": 3,
       "api": "csp_XingChen",
-      "jar": "https://aly2.tuchuangyun.top/autoupload/g1b6f/20261121/6n97/0X0/11212343.png;md5;efdb2c1d9a2e8c26e5a74ba5f53dfc56"
+      "jar": "https://aly2.tuchuangyun.top/autoupload/g1b6f/20261122/dXpY/0X0/11221706.png;md5;13a3d15bdc38794e575853c4c9b9e24e"
     },
     {
       "key": "旺旺影视",
@@ -689,14 +679,14 @@
       "type": 3,
       "api": "csp_Wwys",
       "ext": "https://vip.wwgz.cn:5200",
-      "jar": "https://aly2.tuchuangyun.top/autoupload/g1b6f/20261121/6n97/0X0/11212343.png;md5;efdb2c1d9a2e8c26e5a74ba5f53dfc56"
+      "jar": "https://aly2.tuchuangyun.top/autoupload/g1b6f/20261122/dXpY/0X0/11221706.png;md5;13a3d15bdc38794e575853c4c9b9e24e"
     },
     {
       "key": "独播影视",
       "name": "独播 • 影视",
       "type": 3,
       "api": "csp_Duboku",
-      "jar": "https://aly2.tuchuangyun.top/autoupload/g1b6f/20261121/6n97/0X0/11212343.png;md5;efdb2c1d9a2e8c26e5a74ba5f53dfc56"
+      "jar": "https://aly2.tuchuangyun.top/autoupload/g1b6f/20261122/dXpY/0X0/11221706.png;md5;13a3d15bdc38794e575853c4c9b9e24e"
     },
     {
       "key": "厂长影视",
@@ -707,7 +697,7 @@
       "quickSearch": 1,
       "filterable": 1,
       "ext": "https://www.4kcz.com",
-      "jar": "https://aly2.tuchuangyun.top/autoupload/g1b6f/20261121/6n97/0X0/11212343.png;md5;efdb2c1d9a2e8c26e5a74ba5f53dfc56"
+      "jar": "https://aly2.tuchuangyun.top/autoupload/g1b6f/20261122/dXpY/0X0/11221706.png;md5;13a3d15bdc38794e575853c4c9b9e24e"
     },
     {
       "key": "金牌影视",
@@ -715,7 +705,7 @@
       "type": 3,
       "api": "csp_Jpys",
       "ext": "https://www.sunnafh.com,https://m.sizhengxt.com,https://m.jiabaide.cn",
-      "jar": "https://aly2.tuchuangyun.top/autoupload/g1b6f/20261121/6n97/0X0/11212343.png;md5;efdb2c1d9a2e8c26e5a74ba5f53dfc56"
+      "jar": "https://aly2.tuchuangyun.top/autoupload/g1b6f/20261122/dXpY/0X0/11221706.png;md5;13a3d15bdc38794e575853c4c9b9e24e"
     },
     {
       "key": "骚火影视",
@@ -723,7 +713,7 @@
       "type": 3,
       "api": "csp_SaoHuo",
       "ext": "https://shdy5.us",
-      "jar": "https://aly2.tuchuangyun.top/autoupload/g1b6f/20261121/6n97/0X0/11212343.png;md5;efdb2c1d9a2e8c26e5a74ba5f53dfc56"
+      "jar": "https://aly2.tuchuangyun.top/autoupload/g1b6f/20261122/dXpY/0X0/11221706.png;md5;13a3d15bdc38794e575853c4c9b9e24e"
     },
     {
       "key": "1905",
@@ -733,10 +723,10 @@
       "searchable": 1,
       "quickSearch": 0,
       "filterable": 0,
-      "jar": "https://aly2.tuchuangyun.top/autoupload/g1b6f/20261121/6n97/0X0/11212343.png;md5;efdb2c1d9a2e8c26e5a74ba5f53dfc56"
+      "jar": "https://aly2.tuchuangyun.top/autoupload/g1b6f/20261122/dXpY/0X0/11221706.png;md5;13a3d15bdc38794e575853c4c9b9e24e"
     },
     {
-      "name": "🐱嗷嗚┃动漫",
+      "name": "🐱┃嗷嗚┃动漫",
       "key": "DMlmm",
       "type": 3,
       "api": "csp_DMlmmAmns",
@@ -745,7 +735,7 @@
       "changeable": 1
     },
     {
-      "name": "🐱新帆┃动漫",
+      "name": "🐱┃新帆┃动漫",
       "key": "DMxifan",
       "type": 3,
       "api": "csp_DMxifanAmns",
@@ -754,7 +744,7 @@
       "changeable": 1
     },
     {
-      "name": "🐱牛来┃动漫",
+      "name": "🐱┃牛来┃动漫",
       "key": "DMox",
       "type": 3,
       "api": "csp_DMoxAmns",
@@ -763,7 +753,7 @@
       "changeable": 1
     },
     {
-      "name": "🐱贝斯┃动漫",
+      "name": "🐱┃贝斯┃动漫",
       "key": "DMbus",
       "type": 3,
       "api": "csp_DMbusAmns",
@@ -772,7 +762,7 @@
       "changeable": 1
     },
     {
-      "name": "🐱冬瓜┃动漫",
+      "name": "🐱┃冬瓜┃动漫",
       "key": "DMxigua",
       "type": 3,
       "api": "csp_DMxiguaAmns",
@@ -781,7 +771,7 @@
       "changeable": 1
     },
     {
-      "name": "🐱魔都┃动漫",
+      "name": "🐱┃魔都┃动漫",
       "key": "DMmodu",
       "type": 3,
       "api": "csp_DMmoduAmns",
@@ -790,7 +780,7 @@
       "changeable": 1
     },
     {
-      "name": "📽️嗷嗚┃短剧",
+      "name": "📽️┃嗷嗚┃短剧",
       "key": "DjHggg",
       "type": 3,
       "api": "csp_HgggAmns",
@@ -801,7 +791,7 @@
       "genre": "shortdrama"
     },
     {
-      "name": "📽️豪堪┃短剧",
+      "name": "📽️┃豪堪┃短剧",
       "key": "HHkk",
       "type": 3,
       "api": "csp_HHkkAmns",
@@ -811,7 +801,7 @@
       "genre": "shortdrama"
     },
     {
-      "name": "📽️盒马┃短剧",
+      "name": "📽️┃盒马┃短剧",
       "key": "Hema",
       "type": 3,
       "api": "csp_HemaAmns",
@@ -821,7 +811,7 @@
       "genre": "shortdrama"
     },
     {
-      "name": "📽️拜拜┃短剧",
+      "name": "📽️┃拜拜┃短剧",
       "key": "Bddj",
       "type": 3,
       "api": "csp_BddjAmns",
@@ -831,7 +821,7 @@
       "genre": "shortdrama"
     },
     {
-      "name": "📽️围观┃短剧",
+      "name": "📽️┃围观┃短剧",
       "key": "Wgdj",
       "type": 3,
       "api": "csp_WgdjAmns",
@@ -841,7 +831,7 @@
       "genre": "shortdrama"
     },
     {
-      "name": "📽️喵喵┃短剧",
+      "name": "📽️┃喵喵┃短剧",
       "key": "Qmdj",
       "type": 3,
       "api": "csp_QmdjAmns",
@@ -851,7 +841,7 @@
       "genre": "shortdrama"
     },
     {
-      "name": "📽️星星┃短剧",
+      "name": "📽️┃星星┃短剧",
       "key": "Xydj",
       "type": 3,
       "api": "csp_XydjAmns",
@@ -866,7 +856,7 @@
       "type": 3,
       "api": "https://oss-v1.wangmeipo.cn/236/红果短剧.py",
       "genre": "shortdrama",
-      "jar": "https://aly2.tuchuangyun.top/autoupload/g1b6f/20261121/6n97/0X0/11212343.png;md5;efdb2c1d9a2e8c26e5a74ba5f53dfc56"
+      "jar": "https://aly2.tuchuangyun.top/autoupload/g1b6f/20261122/dXpY/0X0/11221706.png;md5;13a3d15bdc38794e575853c4c9b9e24e"
     },
     {
       "key": "七猫短剧",
@@ -874,7 +864,7 @@
       "type": 3,
       "api": "csp_ShortQimao",
       "genre": "shortdrama",
-      "jar": "https://aly2.tuchuangyun.top/autoupload/g1b6f/20261121/6n97/0X0/11212343.png;md5;efdb2c1d9a2e8c26e5a74ba5f53dfc56"
+      "jar": "https://aly2.tuchuangyun.top/autoupload/g1b6f/20261122/dXpY/0X0/11221706.png;md5;13a3d15bdc38794e575853c4c9b9e24e"
     },
     {
       "key": "河马短剧",
@@ -882,7 +872,7 @@
       "type": 3,
       "api": "csp_ShortHema",
       "genre": "shortdrama",
-      "jar": "https://aly2.tuchuangyun.top/autoupload/g1b6f/20261121/6n97/0X0/11212343.png;md5;efdb2c1d9a2e8c26e5a74ba5f53dfc56"
+      "jar": "https://aly2.tuchuangyun.top/autoupload/g1b6f/20261122/dXpY/0X0/11221706.png;md5;13a3d15bdc38794e575853c4c9b9e24e"
     },
     {
       "key": "好看短剧",
@@ -890,7 +880,7 @@
       "type": 3,
       "api": "csp_ShortHaokan",
       "genre": "shortdrama",
-      "jar": "https://aly2.tuchuangyun.top/autoupload/g1b6f/20261121/6n97/0X0/11212343.png;md5;efdb2c1d9a2e8c26e5a74ba5f53dfc56"
+      "jar": "https://aly2.tuchuangyun.top/autoupload/g1b6f/20261122/dXpY/0X0/11221706.png;md5;13a3d15bdc38794e575853c4c9b9e24e"
     },
     {
       "key": "星芽短剧",
@@ -898,7 +888,7 @@
       "type": 3,
       "api": "csp_ShortXingya",
       "genre": "shortdrama",
-      "jar": "https://aly2.tuchuangyun.top/autoupload/g1b6f/20261121/6n97/0X0/11212343.png;md5;efdb2c1d9a2e8c26e5a74ba5f53dfc56"
+      "jar": "https://aly2.tuchuangyun.top/autoupload/g1b6f/20261122/dXpY/0X0/11221706.png;md5;13a3d15bdc38794e575853c4c9b9e24e"
     },
     {
       "key": "果果短剧",
@@ -912,7 +902,7 @@
         "分类url": "https://www.mochadj.com/i/{cateId}-{catePg}.html"
       },
       "genre": "shortdrama",
-      "jar": "https://aly2.tuchuangyun.top/autoupload/g1b6f/20261121/6n97/0X0/11212343.png;md5;efdb2c1d9a2e8c26e5a74ba5f53dfc56"
+      "jar": "https://aly2.tuchuangyun.top/autoupload/g1b6f/20261122/dXpY/0X0/11221706.png;md5;13a3d15bdc38794e575853c4c9b9e24e"
     }
   ],
   "lives": [
@@ -982,59 +972,19 @@
       "url": "Web"
     },
     {
-      "name": "ikun",
-      "type": 0,
-      "url": "https://jx.hls.one/?url="
-    },
-    {
-      "name": "77",
-      "type": 0,
-      "url": "https://jx.77flv.cc/?url="
-    },
-    {
-      "name": "A6",
-      "type": 0,
-      "url": "https://pl.a6club.com/player/analysis.php?v="
-    },
-    {
-      "name": "8090",
-      "type": 0,
-      "url": "https://www.8090g.cn/?url="
-    },
-    {
-      "name": "M3u8TV",
-      "type": 0,
-      "url": "https://jx.m3u8.tv/jiexi/?url="
-    },
-    {
-      "name": "CK",
-      "type": 0,
-      "url": "https://www.ckplayer.vip/jiexi/?url="
-    },
-    {
       "name": "冰豆",
       "type": 0,
       "url": "https://bd.jx.cn/?url="
     },
     {
-      "name": "XY",
+      "name": "云播",
       "type": 0,
-      "url": "https://jx.xymp4.cc/?url="
+      "url": "https://free.maccms.xyz?url="
     },
     {
-      "name": "推荐",
-      "type": 1,
-      "url": "https://zy.qiaoji8.com/gouzi.php?url=94b07e0b2c0e8244&url="
-    },
-    {
-      "name": "臻享",
-      "type": 1,
-      "url": "https://150.138.78.37:4399/api?key=94b07e0b2c0e8244&url="
-    },
-    {
-      "name": "优选",
-      "type": 1,
-      "url": "http://1.94.221.189:88/algorithm.php?url="
+      "name": "77",
+      "type": 0,
+      "url": "https://jx.77flv.cc/?url="
     },
     {
       "name": "聚合",
